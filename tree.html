@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabiano Rocha - Portfólio de Desenvolvedor & Cientista de Dados | Árvore de Competências Interativa</title>
+    <link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>" type="image/svg+xml">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <meta name="description" content="Portfólio interativo de Fabiano Rocha, desenvolvedor PHP/Java/Python (Flask, FastAPI), especialista em CI/CD (GitHub Actions, Docker, Google Cloud Run) e ciência de dados (Machine Learning, Análise de Dados). Veja projetos de IoT, Backend, Frontend e DevOps.">
+    <meta name="keywords" content="portfólio, desenvolvedor, python, flask, fastapi, ciência de dados, machine learning, análise de dados, devops, ci/cd, github actions, docker, google cloud run, iot, backend, frontend, java, sql, react, flutter, automação, projetos de programação, fabiano rocha, desenvolvedor web, engenharia de software">
+    <meta name="author" content="Fabiano Rocha">
+    <meta name="robots" content="index, follow"> 
+    <link rel="canonical" href="https://fabiuniz.github.io/portfolio/tree.html"> 
+    <meta property="og:title" content="Fabiano Rocha - Portfólio de Desenvolvedor & Cientista de Dados">
+    <meta property="og:description" content="Portfólio interativo de Fabiano Rocha: projetos em Python (Flask, FastAPI), CI/CD, Machine Learning, Análise de Dados, IoT e mais.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fabiuniz.github.io/portfolio/tree.html"> 
+    <meta property="og:image" content="https://fabiuniz.github.io/portfolio/img/arvore_projetos.svg"> 
+    <meta property="og:locale" content="pt_BR">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        /* Variáveis CSS para facilitar a manutenção */
+        :root {
+            --background-color: #4f4f4f;
+            --text-color: #333;
+            --link-color: black;
+            --link-hover-color: yellow;
+            --linkedin-bg: #0A66C2;
+            --github-bg: #333;
+            --border-color: rgba(0, 0, 0, 0.1);
+            --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            --border-radius: 8px;
+            --button-text-color: #ffffff;
+            --button-width: 20rem;
+            --button-height: 3rem;
+            --button-font-size: 2.5rem;
+            --button-padding: 0.5rem;
+            --button-border-radius: 1rem;
+            --spacing-small: 0.8rem;
+            --svg-padding: 20px;
+        }
+
+        body {
+            background-color: var(--background-color);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            overflow-y: auto;
+            overflow-x: hidden;
+            font-family: 'Roboto Light', 'Roboto', sans-serif;
+            color: var(--text-color);
+        }
+
+        object {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--box-shadow);
+            border-radius: var(--border-radius);
+            overflow-y: visible;
+            overflow-x: hidden;
+            padding: var(--svg-padding);
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 768px) {
+            object {
+                width: 100%;
+                height: auto;
+            }
+            body {
+                align-items: flex-start;
+                padding: 10px 0;
+            }
+        }
+
+        .base-button {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: var(--button-padding);
+            text-align: center;
+            outline: none;
+            text-decoration: none !important;
+            color: var(--button-text-color) !important;
+            width: var(--button-width);
+            height: var(--button-height);
+            border-radius: var(--button-border-radius);
+            font-family: "SF Pro Text", Helvetica, sans-serif;
+            font-size: var(--button-font-size);
+            left: 2vw;
+            top: 2vw;
+        }
+
+        .libuttonlinkedin {
+            left: 2.5vw;
+            width: var(--button-width);
+            background-color: var(--linkedin-bg);
+        }
+
+        .libuttongithub {
+            left: 2.5vw;
+            width: var(--button-width);
+            background-color: var(--github-bg);
+            top: calc(2.5vw + var(--button-height) + var(--spacing-small));
+        }
+
+        .libuttongithub img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            .base-button {
+                width: calc(var(--button-width) / 5); /* Ajustado para ser mais proporcional */
+                height: calc(var(--button-height) / 3);
+                padding: calc(var(--button-padding) / 5);
+                font-size: calc(var(--button-font-size) / 7);
+                left: 5.75vw;
+                top: 8.75vw;
+            }
+
+            .libuttonlinkedin {
+                left: 5.75vw;
+            }
+
+            .libuttongithub {
+                top: calc(9vw + calc(var(--button-height) / 3) + calc(var(--button-padding) / 5));
+            }
+        }
+    </style>
+</head>
+<body>
+    <object id="mySvgObject" data="img/arvore_projetos.svg" type="image/svg+xml"></object>
+
+    <a class="base-button libuttonlinkedin" href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=fabiano-rocha-de-almeida-dev" target="_blank">LinkedIn</a>
+    <a class="base-button libuttongithub" href="https://github.com/fabiuniz" target="_blank">
+        <img alt="GitHub followers" src="https://img.shields.io/github/followers/fabiuniz?style=social">
+    </a>
+
+    <script>
+        // Use const para valores que não mudam
+        const hookfigma = {
+            hook0: "path_00000000000000000000000000000000000000000000000000", // vazio
+            hook1: "path_M158097334742H15795L158377323105H158522L1589533474", // DadosIA --> analise de dados
+            hook2: "path_M15805531005H158218L158613540664H158627L1590225310", // DadosIA --> machine elairne
+            hook3: "path_M158097702999H15795L158377691363H158522L1589570299", // DadosIA --> automação
+            hook4: "path_M167161943381V955017H16702V943381H167161ZM16755994", // IoT      --> internet das coisas
+            hook5: "path_M16702113511V112347H167161V112865H167781V112347H16", // IoT      --> Hardware e eletronica
+            hook6: "path_M153024141478H152883C15287514143715286141402152841", // DevOps   --> containers
+            hook7: "path_M600312172618V171454H60438C60519117145460585917146", // Dev      --> backend
+            hook8: "path_M600312155061V153898H607289V154023H601721V154416H6", // Dev      --> frontend
+            hook9: "path_M352025100132H337253L37998989681H394525L4372531001", // Fund     --> arquitetura de software
+            hook10: "path_M347253865872V854235H361343V864622H415434V865872H3", // Fund     -->linguagens
+            hook11: "path_M203205154498V153334H207273C2080841533342087521533", // Dev      -->Banco de dados
+            hook12: "path_M347253112517V111354H361343V112392H415434V112517H3", // Fund     -->logica e extrutura de dados
+            hook13: "path_M11501664591C11494266401511466666356811418166325C1", // Skils    -->skils
+            hook14: "path_M203205165334H204887L2088411663H208978L21293216533", // Monolíto -->Monolíto
+            hook15: "path_M345577370333V358696H352555V359946H346986V363878H3", // Seguranca --> fund
+            hook16: "path_M203205177134H204887L2088411781H208978L21293217713", // Dev      --> Mobile
+            hook17: "path_M110056547603V559239H108647V547603H110056ZM1140455", // Skils    -->ingles
+            hook18: "path_M11286414149H112723C112715141449112714141411267914", // DevOps   --> ci/cd"
+            hook19: "path_M112864162168H112723C11271516212711271620921126791", // DevOps   --> nuvem
+            hook20: "path_M112068152466V153629H111927V152466H112068ZM1124671" // DevOps   --> nuvem IaC
+        };
+        const github = "https://github.com/fabiuniz";
+
+        // Mapeamento direto de links para hooks, usando o hookfigma para referências.
+        // Isso evita repetições e melhora a legibilidade.
+        const linksDataFigma = [
+            { hook: "DadosIA", path: hookfigma.hook1, label: "🩸 Registro de Glicemia", url: github+"/dextro", description: "⭐ Sistema moderno com analise de dados para controle glicêmico", technical_requirement: ""},
+            { hook: "IoT", path: hookfigma.hook4, label: "🎹 Controlador MIDI baseado em Arduino.", url: github+"/Midi_Arduino", description: "⭐ Projeto de um controlador MIDI baseado em Arduino.", technical_requirement: ""},
+            { hook: "IoT", path: hookfigma.hook5, label: "🎹 Controlador MIDI baseado em Arduino.", url: github+"/Midi_Arduino", description: "⭐ Projeto de um controlador MIDI baseado em Arduino.", technical_requirement: ""},
+            { hook: "DevOps", path: hookfigma.hook18, label: "📚 Sistema de Gestão Escolar", url: github+"/gestaoedu", description: "⭐ A aplicação possui uma API backend construída com **FastAPI** e um frontend interativo desenvolvido com **React** e **Tailwind CSS**. O banco de dados é gerenciado por **SQLAlchemy** com SQLite, e a aplicação é containerizada utilizando **Docker**. Este projeto foi desenvolvido como parte da **Imersão DevOps da Alura**.", technical_requirement: ""},
+            { hook: "Monolíto", path: hookfigma.hook14, label: "📚 Sistema de Gestão Escolar", url: github+"/gestaoedu", description: "⭐ A aplicação possui uma API backend construída com **FastAPI** e um frontend interativo desenvolvido com **React** e **Tailwind CSS**. O banco de dados é gerenciado por **SQLAlchemy** com SQLite, e a aplicação é containerizada utilizando **Docker**. Este projeto foi desenvolvido como parte da **Imersão DevOps da Alura**.", technical_requirement: ""},
+            { hook: "Dev", path: hookfigma.hook16, label: "📱 Desenvolvimento Flutter (Android).", url: github+"/apptast", description: "⭐ Projeto ou curso da Alura relacionado a desenvolvimento mobile, provavelmente Android.", technical_requirement: ""},
+            { hook: "Monolíto", path: hookfigma.hook14, label: "🌬️ Consulta de Qualidade do Ar - Flask", url: github+"/weather", description: "⭐ Consulta de Qualidade do Ar - Flask", technical_requirement: ""},
+            { hook: "Fund", path: hookfigma.hook12, label: "📚 Fundamentos - appdla Python/React.", url: github+"/appdla", description: "⭐ Parte de um curso 21 Days do Código Fonte TV, relacionado a appdla (informação insuficiente para detalhar o tema, mas categorizado como curso).", technical_requirement: ""},
+            { hook: "Fund", path: hookfigma.hook12, label: "🌊 Gerenciamento de Estudos (StudyFlow)", url: github+"/StudyFlow", description: "⭐ Projeto StudyFlow encontrado dentro da estrutura de um curso do Código Fonte TV no GitHub.", technical_requirement: ""},
+            { hook: "DadosIA", path: hookfigma.hook1, label: "📉 Analise de Dados - Fato Dimensão", url: github+"/fato-dimensao", description: "⭐ Analise de Dados - Fato Dimensão", technical_requirement: ""},
+            { hook: "DadosIA", path: hookfigma.hook1, label: "🎲 Java com Dados e IA", url: github+"/dados_java_ia", description: "⭐ Java com Dados e IA", technical_requirement: ""},
+            { hook: "Dev", path: hookfigma.hook7, label: "☯ Board", url: github+"/board-dio", description: "⭐ 🏆 Board", technical_requirement: ""},
+            { hook: "Dev", path: hookfigma.hook7, label: "🏆 Design Patterns", url: github+"/design-patterns-dio", description: "⭐ Design Patterns", technical_requirement: ""},
+            { hook: "Dev", path: hookfigma.hook7, label: "☕ POO java", url: github+"/poo-dio", description: "⭐ 🏆 Desafio POO - Demonstração dos 4 Pilares da Programação Orientada a Objetos", technical_requirement: ""},
+            { hook: "Dev", path: hookfigma.hook7, label: "🏆 Sudoku", url: github+"/sudoku-dio", description: "⭐ Sudoku", technical_requirement: ""},
+            { hook: "Dev", path: hookfigma.hook7, label: "🥴 Introdução ao Pull Request", url: github+"/dio-lab-open-source", description: "⭐  Descrição do projeto", technical_requirement: ""},
+            { hook: "Skils", path: hookfigma.hook17, label: "🗣️ Pratice Vocabulary", url: github+"/tofluence", description: "⭐ Pratice Vocabulary - Ferramenta de Potencialização de Vocabulário Inglês", technical_requirement: ""},
+            { hook: "Dev", path: hookfigma.hook11, label: "📦 PostgreSQL, JPA e API RESTful em Java Spring.", url: github+"/gmcatalog-rest", description: "⭐ Projeto GmList com PostgreSQL, JPA e API RESTful em Java Spring.", technical_requirement: ""},
+            { hook: "Monolíto", path: hookfigma.hook14, label: "📦 PostgreSQL, JPA e API RESTful em Java Spring.", url: github+"/gmcatalog-rest", description: "⭐ Projeto GmList com PostgreSQL, JPA e API RESTful em Java Spring.", technical_requirement: ""},
+            { hook: "Fund", path: hookfigma.hook9, label: "📦 PostgreSQL, JPA e API RESTful em Java Spring.", url: github+"/gmcatalog-rest", description: "⭐ Projeto GmList com PostgreSQL, JPA e API RESTful em Java Spring.", technical_requirement: ""},
+            { hook: "Dev", path: hookfigma.hook7, label: "📦 PostgreSQL, JPA e API RESTful em Java Spring.", url: github+"/gmcatalog-rest", description: "⭐ Projeto GmList com PostgreSQL, JPA e API RESTful em Java Spring.", technical_requirement: ""},
+            { hook: "DadosIA", path: hookfigma.hook1, label: "💥 Integração de Python com Power BI.", url: github+"/py_powerbi", description: "⭐ Conteúdo ou curso sobre integração de Python com Power BI para análise de dados pedidos, produto e despesas.", technical_requirement: ""},
+            { hook: "DevOps", path: hookfigma.hook6, label: "🐳 Ambiente de desenvolvimento com Docker", url: github+"/script_docker", description: "⭐ Configuração de ambiente de desenvolvimento utilizando Docker Compose.", technical_requirement: ""},
+            { hook: "Fund", path: hookfigma.hook10, label: "🐳 Ambiente de desenvolvimento com Docker", url: github+"/script_docker", description: "⭐ Configuração de ambiente de desenvolvimento utilizando Docker Compose.", technical_requirement: ""},
+            { hook: "Skils", path: hookfigma.hook13, label: "💼 Portfólio geral.", url: github+"/fabiuniz", description: "⭐ Portfólio.", technical_requirement: ""},
+            { hook: "DadosIA", path: hookfigma.hook1, label: "🤖 Agente AI Google Gemini com java Spring Boot", url: github+"/agente_ai", description: "⭐ Agente de AI Google Gemini usando Java Spring Boot", technical_requirement: ""},
+            { hook: "Dev", path: hookfigma.hook7, label: "☕️ Hello word Java + angular", url: github+"/angular-frontend", description: "⭐ Hello word Java + angular", technical_requirement: ""},
+            { hook: "DevOps", path: hookfigma.hook18, label: "⚙️ Laravel - GitHub Actions - GCP.", url: github+"/laravel-docker-app", description: "⭐ Projeto Laravel Dockerizado com CI/CD - GitHub Actions - Google Cloud Run.", technical_requirement: ""},
+            { hook: "Dev", path: hookfigma.hook7, label: "💸 Creditos de Carbono Django", url: github+"/carbon_credit", description: "⭐ Creditos de Carbono Django", technical_requirement: ""},
+            { hook: "DevOps", path: hookfigma.hook18, label: "⚙️ GCP/Heroku Docker - GitHub Actions.", url: github+"/cicd", description: "⭐ Aplicação Flask Dockerizada com CI/CD Automatizado", technical_requirement: ""},
+            { hook: "DadosIA", path: hookfigma.hook2, label: "📈 Previsão de Turnover", url: github+"/turnover", description: "⭐ Previsão de Turnover de Funcionários com FastAPI e TensorFlow.", technical_requirement: ""},
+            { hook: "DadosIA", path: hookfigma.hook3, label: "🎯 Extraindo legenda do YouTube via cmd", url: github+"/youtube-transcript", description: "⭐ Extraindo legenda do YouTube usando Python", technical_requirement: ""},
+            { hook: "DadosIA", path: hookfigma.hook2, label: "🧠 Transcrição vídeos e análise de sentimento IA", url: github+"/yt-transcribe-ai", description: "⭐ Projeto para transcrever vídeos do YouTube e realizar análise de sentimento usando FastAPI e IA.,", technical_requirement: ""},
+            { hook: "DadosIA", path: hookfigma.hook1, label: "📈 Analise de dados R", url: github+"/r_dados", description: "⭐ Análise de Vendas de uma Loja de Varejo", technical_requirement: ""},
+            { hook: "Dev", path: hookfigma.hook8, label: "🎮 Jogo JS (JavaScript)", url: github+"/game_javascript", description: "⭐ Descrição de um projeto de jogo baseado em JavaScript.", technical_requirement: ""},
+            { hook: "DevOps", path: hookfigma.hook6, label: "🧩 Microserviços", url: github+"/microservices-java", description: "Microserviços", technical_requirement: "" },
+            { hook: "Iac", path: hookfigma.hook20, label: "⚙️ GCP/Heroku Docker - GitHub Actions.", url: github+"/cicd", description: "⭐ Aplicação Flask Dockerizada com CI/CD Automatizado" },
+        ];
+
+        /**
+         * Adiciona estilos CSS para elementos SVG dinamicamente.
+         * @param {Document} svgDoc O documento SVG.
+         */
+        function addSvgStyles(svgDoc) {
+            const style = svgDoc.createElementNS("http://www.w3.org/2000/svg", "style");
+            style.textContent = `
+                .interactive-node {
+                    cursor: pointer;
+                }
+                .clickable-overlay {
+                    cursor: pointer;
+                }
+                text {
+                    user-select: none;
+                    pointer-events: none;
+                }
+                .link-span {
+                    cursor: pointer;
+                    display: block;
+                    font-size: 14px;
+                    color: var(--link-color);
+                    font-family: 'Roboto Light', 'Roboto', sans-serif;
+                    white-space: nowrap;
+                    overflow: hidden; /* Adicionado para lidar com texto que excede a largura */
+                    text-overflow: ellipsis; /* Adicionado para truncar o texto com reticências */
+                    max-width: 100%; /* Garante que o texto não exceda o foreignObject */
+                }
+                .link-span:hover {
+                    color: var(--link-hover-color);
+                }
+            `;
+            svgDoc.documentElement.prepend(style); // Usar prepend para garantir que o estilo seja o primeiro elemento
+        }
+
+        /**
+         * Adiciona um ForeignObject (com span de link) abaixo de cada elemento SVG interativo.
+         * @param {Document} svgDoc O documento SVG.
+         * @param {Array<Object>} linksToAssign Array de objetos de link com `path`, `label`, `url`, `description`.
+         */
+        function addLinksToSvgElements(svgDoc, linksToAssign) {
+            const verticalOffsetMap = new Map();
+            const FO_WIDTH = 400;
+            const FO_HEIGHT = 15;
+            const VERTICAL_SPACING = 5;
+            const INDENTATION = 10;
+
+            linksToAssign.forEach(link => {
+                const targetElement = svgDoc.getElementById(link.path);
+                if (!targetElement) {
+                    console.warn(`Elemento com ID "${link.path}" não encontrado no SVG para o link "${link.label}".`);
+                    return;
+                }
+
+                const bbox = targetElement.getBBox();
+                let currentVerticalOffset = verticalOffsetMap.get(targetElement.id) || 0;
+
+                const x = bbox.x + INDENTATION; // Indentação fixa do lado esquerdo
+                const y = bbox.y + bbox.height + VERTICAL_SPACING + currentVerticalOffset;
+
+                const foreignObject = svgDoc.createElementNS("http://www.w3.org/2000/svg", "foreignObject");
+                foreignObject.setAttribute('x', x);
+                foreignObject.setAttribute('y', y);
+                foreignObject.setAttribute('width', FO_WIDTH);
+                foreignObject.setAttribute('height', FO_HEIGHT);
+                foreignObject.style.overflow = 'visible';
+
+                const divContainer = svgDoc.createElementNS("http://www.w3.org/1999/xhtml", "div");
+                divContainer.style.cssText = `
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                `;
+
+                const span = svgDoc.createElementNS("http://www.w3.org/1999/xhtml", "span");
+                span.textContent = link.label;
+                span.title = link.description;
+                span.className = 'link-span';
+                span.addEventListener('click', () => window.open(link.url, '_blank'));
+
+                divContainer.appendChild(span);
+                foreignObject.appendChild(divContainer);
+                svgDoc.documentElement.appendChild(foreignObject);
+
+                verticalOffsetMap.set(targetElement.id, currentVerticalOffset + FO_HEIGHT + VERTICAL_SPACING);
+
+                // Adiciona a classe interativa e listeners de hover ao elemento SVG
+                if (!targetElement.classList.contains('interactive-node')) {
+                    targetElement.classList.add('interactive-node');
+                    targetElement.addEventListener('mouseenter', () => {
+                        targetElement.classList.add('interactive-node-hover');
+                    });
+                    targetElement.addEventListener('mouseleave', () => {
+                        targetElement.classList.remove('interactive-node-hover');
+                    });
+                }
+            });
+        }
+
+        /**
+         * Atribui IDs a elementos SVG se não tiverem e então adiciona os links.
+         */
+        function initializeSvgInteractions() {
+            const svgObject = document.getElementById('mySvgObject');
+
+            svgObject.addEventListener('load', function() {
+                const svgDoc = svgObject.contentDocument;
+                if (!svgDoc) {
+                    console.error("Não foi possível acessar o conteúdo do SVG. Verifique a política de mesma origem (Same-Origin Policy).");
+                    return;
+                }
+
+                addSvgStyles(svgDoc); // Adiciona os estilos CSS ao SVG
+
+                const potentialNodes = Array.from(svgDoc.querySelectorAll('path'));
+                let idCounter = 0; // Usado para garantir IDs únicos se a geração base não for suficiente
+
+                // Processa apenas uma vez para adicionar IDs e classes
+                potentialNodes.forEach(element => {
+                    // Otimização: Adiciona a classe interativa se o elemento for um candidato a clique
+                    // A lógica original focava em 'fill === white'. Se houver outros critérios, adapte.
+                    const fill = element.getAttribute('fill');
+                    if (fill === 'white' || fill === '#DBDBDB') { // Mantendo a lógica original para identificar interativos
+                        if (!element.id) { // Só gera ID se não tiver um
+                            let generatedId;
+                            if (element.tagName === 'path') {
+                                const dAttribute = element.getAttribute('d');
+                                generatedId = `path_${dAttribute.replace(/[^a-zA-Z0-9_]/g, '').substring(0, 50)}`;
+                            } else if (element.tagName === 'ellipse' || element.tagName === 'circle') {
+                                const cx = element.getAttribute('cx');
+                                const cy = element.getAttribute('cy');
+                                const safeCx = cx ? cx.replace('.', '_') : '0';
+                                const safeCy = cy ? cy.replace('.', '_') : '0';
+                                generatedId = `${element.tagName}_${safeCx}_${safeCy}`;
+                            }
+
+                            let tempId = generatedId;
+                            let uniqueAttempt = 0;
+                            // Garante unicidade do ID dentro do SVG
+                            while(svgDoc.getElementById(tempId) && svgDoc.getElementById(tempId) !== element) {
+                                tempId = `${generatedId}_${uniqueAttempt++}`;
+                            }
+                            element.id = tempId;
+                        }
+                    }
+                });
+
+                // Agora que todos os IDs estão definidos, adicione os links
+                addLinksToSvgElements(svgDoc, linksDataFigma);
+            });
+        }
+
+        // Inicia o processo quando o DOM estiver completamente carregado
+        document.addEventListener('DOMContentLoaded', initializeSvgInteractions);
+    </script>
+</body>
+</html>
