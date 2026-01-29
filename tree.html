@@ -150,6 +150,29 @@
     </a>
 
     <script>
+        const quadro_figma = {
+            hook0:  [15, 90],// vazio
+            hook1:  [50, 90],// DadosIA --> analise de dados
+            hook2:  [38, 90],// DadosIA --> machine elairne
+            hook3:  [27, 90],// DadosIA --> automação
+            hook4:  [43, 83],// IoT      --> internet das coisas
+            hook5:  [37, 83],// IoT      --> Hardware e eletronica
+            hook6:  [70, 83],// DevOps   --> containers
+            hook7:  [74, 83],// Dev      --> backend
+            hook8:  [42, 83],// Dev      --> frontend
+            hook9:  [22, 83],// Fund     --> arquitetura de software
+            hook10: [28, 83], // Fund     -->linguagens
+            hook11: [25, 83], // Dev      -->Banco de dados
+            hook12: [31, 83], // Fund     -->logica e extrutura de dados
+            hook13: [30, 83], // Skils    -->skils
+            hook14: [25, 83], // Monolíto -->Monolíto
+            hook15: [25, 83], // Seguranca --> fund
+            hook16: [25, 83], // Dev      --> Mobile
+            hook17: [25, 83], // Skils    -->ingles
+            hook18: [22, 83], // DevOps   --> ci/cd"
+            hook19: [15, 83], // DevOps   --> nuvem
+            hook20: [15, 83]// DevOps   --> nuvem IaC
+        };
         // Use const para valores que não mudam
         const hookfigma = {
             hook0: "path_00000000000000000000000000000000000000000000000000", // vazio
@@ -259,66 +282,91 @@
          * @param {Array<Object>} linksToAssign Array de objetos de link com `path`, `label`, `url`, `description`.
          */
         function addLinksToSvgElements(svgDoc, linksToAssign) {
-            const verticalOffsetMap = new Map();
+            // Map para armazenar o container de cada elemento (evita duplicar o foreignObject)
+            const containerMap = new Map();
+            
             const FO_WIDTH = 400;
-            const FO_HEIGHT = 15;
-            const VERTICAL_SPACING = 5;
+            const MAX_HEIGHT = 300; // Altura máxima antes de aparecer a barra de rolagem
             const INDENTATION = 10;
+            const VERTICAL_SPACING = 5;
 
             linksToAssign.forEach(link => {
                 const targetElement = svgDoc.getElementById(link.path);
                 if (!targetElement) {
-                    console.warn(`Elemento com ID "${link.path}" não encontrado no SVG para o link "${link.label}".`);
+                    console.warn(`Elemento com ID "${link.path}" não encontrado.`);
                     return;
                 }
+                let divContainer = containerMap.get(targetElement.id);
 
-                const bbox = targetElement.getBBox();
-                let currentVerticalOffset = verticalOffsetMap.get(targetElement.id) || 0;
+                // Se é o primeiro link deste elemento, cria o ForeignObject e a Div
+                if (!divContainer) {
+                    const bbox = targetElement.getBBox();
+                    const x = bbox.x + INDENTATION;
+                    const y = bbox.y + bbox.height + VERTICAL_SPACING;
 
-                const x = bbox.x + INDENTATION; // Indentação fixa do lado esquerdo
-                const y = bbox.y + bbox.height + VERTICAL_SPACING + currentVerticalOffset;
+                    const foreignObject = svgDoc.createElementNS("http://www.w3.org/2000/svg", "foreignObject");
+                    foreignObject.setAttribute('x', x);
+                    foreignObject.setAttribute('y', y);
+                    foreignObject.setAttribute('width', FO_WIDTH);
+                    foreignObject.setAttribute('height', MAX_HEIGHT); // Altura fixa do frame
+                    foreignObject.setAttribute('vector-effect', 'non-scaling-stroke');                    
 
-                const foreignObject = svgDoc.createElementNS("http://www.w3.org/2000/svg", "foreignObject");
-                foreignObject.setAttribute('x', x);
-                foreignObject.setAttribute('y', y);
-                foreignObject.setAttribute('width', FO_WIDTH);
-                foreignObject.setAttribute('height', FO_HEIGHT);
-                foreignObject.style.overflow = 'visible';
+                    let largura = "85%"; 
+                    let altura =  "70%";
+                    const hookKey = Object.keys(hookfigma).find(key => hookfigma[key] === link.path);
+                    if (hookKey){
+                        altura =  quadro_figma[hookKey][0]+"%";
+                        largura = quadro_figma[hookKey][1]+"%"; 
+                        console.warn(quadro_figma[hookKey][0]);
+                    }
 
-                const divContainer = svgDoc.createElementNS("http://www.w3.org/1999/xhtml", "div");
-                divContainer.style.cssText = `
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-start;
-                `;
 
+
+                    divContainer = svgDoc.createElementNS("http://www.w3.org/1999/xhtml", "div");
+                    divContainer.style.cssText = `
+                        width: ${largura};
+                        height: ${altura}; /* Ocupa toda a altura do foreignObject */
+                        overflow-y: auto;
+                        overflow-x: hidden;
+                        display: flex;
+                        flex-direction: column;
+                        background: transparent;
+                        border: none;
+                        #border: 1px solid #ccc;
+                        font-size: 14px; /* <--- DEFINA UM TAMANHO FIXO AQUI */
+                        box-sizing: border-box;
+                    `;
+
+                    foreignObject.appendChild(divContainer);
+                    svgDoc.documentElement.appendChild(foreignObject);
+                    containerMap.set(targetElement.id, divContainer);
+                }
+
+                // Cria o link (span) e adiciona ao container existente
                 const span = svgDoc.createElementNS("http://www.w3.org/1999/xhtml", "span");
                 span.textContent = link.label;
                 span.title = link.description;
                 span.className = 'link-span';
+                span.style.cssText = `
+                    font-size: 14px !important; /* Força o tamanho */
+                    flex-shrink: 0;
+                    cursor: pointer;
+                    display: block;
+                    padding: 2px 5px;
+                    white-space: nowrap;
+                `;
                 span.addEventListener('click', () => window.open(link.url, '_blank'));
 
                 divContainer.appendChild(span);
-                foreignObject.appendChild(divContainer);
-                svgDoc.documentElement.appendChild(foreignObject);
 
-                verticalOffsetMap.set(targetElement.id, currentVerticalOffset + FO_HEIGHT + VERTICAL_SPACING);
-
-                // Adiciona a classe interativa e listeners de hover ao elemento SVG
+                // Lógica de hover no elemento original (mantida)
                 if (!targetElement.classList.contains('interactive-node')) {
                     targetElement.classList.add('interactive-node');
-                    targetElement.addEventListener('mouseenter', () => {
-                        targetElement.classList.add('interactive-node-hover');
-                    });
-                    targetElement.addEventListener('mouseleave', () => {
-                        targetElement.classList.remove('interactive-node-hover');
-                    });
+                    targetElement.addEventListener('mouseenter', () => targetElement.classList.add('interactive-node-hover'));
+                    targetElement.addEventListener('mouseleave', () => targetElement.classList.remove('interactive-node-hover'));
                 }
             });
         }
-
         /**
          * Atribui IDs a elementos SVG se não tiverem e então adiciona os links.
          */
