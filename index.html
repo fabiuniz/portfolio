@@ -42,43 +42,40 @@
       <img src="assets/img/hero-img.jpg" alt="" data-aos="fade-in">
       <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
         <h2>Fabiano Rocha de Almeida</h2>
-        <p><span class="typed" data-typed-items="Fullstack Dev PHP | Java Spring Boot"></span></p>
+        <p><span id="typed-element"></span></p>
       </div>
 
-    </section>  <section id="about" class="about section">
+    </section>  
+    <section id="about" class="about section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4">
           <div class="col-md-6">
-            <div class="about-me">
-              <h4>Sobre mim</h4>
-              <p>
-                Sou profissional de TI com mais de 23 anos de experiência em análise de sistemas e desenvolvimento de software. Atuei grande parte da minha carreira no segmento trabalhista, onde pude aprender e evoluir em projetos que uniam tecnologia e eficiência.
-              </p>
-              <p>
-                Tenho como principais habilidades PHP e MySQL, com experiências também em Java, Python, Delphi e JavaScript. Recentemente, busquei aperfeiçoamento em áreas como Ciência de Dados, Inteligência Artificial e Docker.
-              </p>
-            </div>
+            <div class="about-me" id="about-text">
+              </div>
           </div>
 
           <div class="col-md-6">
-            <div class="row justify-content-between gy-4">
-              <div class="col-lg-7 about-info">
-                <div class="about-me">
-                  <h4>Contatos</h4>
-                  <p><strong>Name: </strong> <span>Fabiano Rocha de Almeida</span></p>
-                  <p><strong>Título: </strong> <span>Fullstack Dev & Data Science</span></p>
-                  <p><strong>Email: </strong> <span>fabiuniz@msn.com</span></p>   
-                </div>
+            <div class="about-me row justify-content-between gy-1">
+              <h4>Contatos</h4>
+              <p><strong>Nome: </strong> <span id="contact-name"></span></p>
+              <p><strong>Título: </strong> <span id="contact-title"></span></p>
+              <p><strong>Email: </strong> <span id="contact-email"></span></p>
+              <p><strong>LinkedIn: </strong> <span id="contact-linkedin"></span></p>
+              <p><strong>Github: </strong> <span id="contact-github"></span></p>
+              <div class="social-links mt-3">
+                 <a href="" id="contact-linkedin_lnk" target="_blank" class="btn btn-outline-primary btn-sm"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                 <a href="" id="contact-github_lnk" target="_blank" class="btn btn-outline-dark btn-sm"><i class="bi bi-github"></i> GitHub</a>
+                 <a href="" id="contact-email_lnk" target="_blank" class="btn btn-outline-dark btn-sm"><i class="bi bi-email"></i> Email</a>
               </div>
             </div>
           </div>
         </div>
-
       </div>
+    </section>
 
-    </section>  <section id="resume" class="resume section">
 
-      <div class="container section-title" data-aos="fade-up">
+      <section id="resume" class="resume section">
+        <div class="container section-title" data-aos="fade-up">
         <h2>Currículo</h2>
         <p>Experiências e principais resultados gerados na minha carreira.</p>
       </div> <div class="container">
@@ -86,30 +83,12 @@
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <h3 class="resume-title">Objetivo</h3>
             <div class="resume-item pb-0">
-              <h4>Fabiano Rocha de Almeida</h4>
-              <p>
-                <em>
-                  Estou em busca de uma oportunidade para aplicar minha experiência em desenvolvimento e análise de dados, com foco em projetos que utilizem Java, SQL e fundamentos de Ciência de Dados. Meu objetivo é continuar aprendendo, colaborando e entregando soluções que gerem valor real para a empresa.
-                </em>
-              </p>
-            </div>   <h3 class="resume-title">Formação</h3>
-            <div class="resume-item">
-              <h4>MBA em Gestão e Tecnologia da Informação</h4>
-              <h5>2008 - 2009</h5>
-              <p><em>UNINOVE</em></p>
-              <p>Disciplinas: Gestão de Projetos, Estratégia em TI, Análise de Sistemas.</p>
-            </div>   
-            <div class="resume-item">
-              <h4>Tecnólogo em Informática</h4>
-              <h5>2000 - 2002</h5>
-              <p><em>FIPEP - Faculdades Integradas IPEP</em></p>
-              <p>Disciplinas: Banco de Dados, Lógica de Programação, Desenvolvimento de Sistemas.</p>
-            </div>  
-            <div class="resume-item">
-              <h4>Certificações Recentes</h4>
-              <p><em>Google Cloud / Alura</em></p>
-              <p>Cursos: IA Generativa, Fundamentos de Python para IA, Containers e Docker, Imersão Dev Agentes de IA, Imersão Dados com Python.</p>
-            </div>   <h3 class="resume-title">Tecnologias</h3>
+              <p><em id="resume-objective"></em></p>
+            </div>
+            <h3 class="resume-title">Formação</h3>
+            <div id="resume-education"></div> 
+          </div>
+          <h3 class="resume-title">Tecnologias</h3>
             <p>As principais ferramentas e técnicas que tenho experiência e me sinto confortável na utilização em diferentes contextos de negócio.</p>
             <section id="skills" class="about section">
               <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -156,229 +135,71 @@
                   </div>
                 </div>
 
-              </section>  </div>
+              </section>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Experiência</h3>
+            <div id="resume-experience-list"></div> 
+          </div>
+        </div>
+      </div>
+    </section> 
 
-              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                <h3 class="resume-title">Experiência</h3>
-                <div class="resume-item">
-                  <h4>Desenvolvedor Fullstack/DS em Transição</h4>
-                  <h5>Out/2024 - Present</h5>
-                  <p><em>Em Transição de Carreira</em></p>
-                  <ul>
-                    <li>Aprimoramento de expertise em Java Spring Boot, Data Science e IA, com foco em Big Data, Machine Learning e DevOps.</li>
-                    <li>Desenvolvimento de aplicações Spring Boot e microserviços, com foco em arquiteturas distribuídas e CI/CD.</li>
-                    <li>Criação de projetos práticos e contribuições open-source para demonstrar domínio de novas tecnologias.</li>
-                  </ul>
-                  <p>
-                    Stack: Java, Spring Boot, Python, SQL, Docker, Machine Learning, IA.
-                  </p>
-                </div>   
-                <div class="resume-item">
-                  <h4>Analista de Sistemas Sênior</h4>
-                  <h5>Jan/2020 - Out/2024 (4 anos 10 meses)</h5>
-                  <p><em>Newcap - Cálculos Trabalhistas</em></p>
-                  <ul>
-                    <li>Desenvolvimento fullstack e engenharia de software para sistemas de cálculos trabalhistas.</li>
-                    <li>Criação de sistemas escaláveis utilizando Delphi, PHP e JavaScript.</li>
-                    <li>Implementação de integração via API REST, automação de cálculos e otimização de processos com CI/CD.</li>
-                    <li>Mentoria técnica e liderança de projetos de desenvolvimento.</li>
-                  </ul>
-                  <p>
-                    Stack: PHP, MySQL, Delphi, JavaScript, CI/CD, API REST.
-                  </p>
-                </div>   
-                <div class="resume-item">
-                  <h4>Analista de Sistemas Pleno</h4>
-                  <h5>Jan/2006 - Dez/2019 (14 anos)</h5>
-                  <p><em>Newcap - Cálculos Trabalhistas</em></p>
-                  <ul>
-                    <li>Responsável pela arquitetura e otimização de software para processos jurídicos.</li>
-                    <li>Automação de cálculos e análise de dados trabalhistas para apoio à decisão.</li>
-                    <li>Desenvolvimento de sistemas internos e externos.</li>
-                    <li>Redesign de software para melhor segurança e escalabilidade.</li>
-                  </ul>
-                  <p>
-                    Stack: PHP, MySQL, Delphi, Levantamento de Requisitos.
-                  </p>
-                </div><div class="resume-item">
-                  <h4>Técnico de Suporte em TI</h4>
-                  <h5>Jan/2002 - Dez/2005 (4 anos)</h5>
-                  <p><em>Newcap - Cálculos Trabalhistas</em></p>
-                  <ul>
-                    <li>Atuação na infraestrutura de sistemas, suporte técnico e manutenção de software.</li>
-                    <li>Suporte técnico especializado para usuários internos e clientes.</li>
-                    <li>Administração de servidores e redes para garantia de alta disponibilidade.</li>
-                  </ul>
-                  <p>
-                    Stack: Suporte Técnico, Redes.
-                  </p>
-                </div>  </div>
+  </div>
 
-              </div>
+    
 
-            </div>
+    <section id="portfolio" class="portfolio section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfólio de Projetos</h2>
+        <p>Soluções práticas desenvolvidas com foco em resultados de negócio.</p>
+      </div>
+      <div class="container">
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">Todos</li>
+            <li data-filter=".filter-app">Análise & Visualização</li>
+            <li data-filter=".filter-product">Backend</li>
+            <li data-filter=".filter-branding">IA</li>
+            <li data-filter=".filter-devops">DevOps</li>
+          </ul>
+          <div class="row gy-4 isotope-container" id="portfolio-container" data-aos="fade-up" data-aos-delay="200"></div>
+        </div>
+      </div>
+    </section>
 
-          </section>  <section id="portfolio" class="portfolio section">
+    <section id="contact" class="contact section">
+      <form action="" class="php-email-form d-none"></form>
+    </section>
 
-            <div class="container section-title" data-aos="fade-up">
-              <h2>Portfólio de Projetos</h2>
-              <p>Demonstração de soluções de problemas de negócio com as ferramentas e técnicas que domino</p>
-            </div> <div class="container">
-              <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-                <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-                  <li data-filter="*" class="filter-active">Todos</li>
-                  <li data-filter=".filter-app">Análise & Visualização</li>
-                  <li data-filter=".filter-product">Desenvolvimento Backend</li>
-                  <li data-filter=".filter-branding">Inteligência Artificial</li>
-                  <li data-filter=".filter-devops">DevOps/Containers</li>
-                </ul>  <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-                  
-                  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                    <img src="assets/img/portfolio/app-3_.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <h4>Automação com IA (YouTube)</h4>
-                      <p>Projeto em Colab para extrair áudio, transcrever com Whisper, analisar sentimento, resumir e gerar conteúdo para redes usando IA (Gemini).</p>
-                      <a href="assets/img/portfolio/app-3_.jpg" title="Projeto em Google Colab" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                      <a href="https://github.com/fabiuniz/yt-transcribe-ai" title="Mais Detalhes" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                    </div>
-                  </div>   
-                  
-                  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                    <img src="assets/img/portfolio/app-3__.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <h4>Agente AI Google Gemini (Java Spring Boot)</h4>
-                      <p>Implementação de um Agente de Inteligência Artificial usando a API do Gemini com o framework Java Spring Boot, demonstrando a capacidade de integração de IA em sistemas backend robustos.</p>
-                      <a href="https://github.com/fabiuniz/agente_ai" title="Ver no GitHub" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                      <a href="assets/img/portfolio/app-3__.jpg" title="Agente AI Google Gemini" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    </div>
-                  </div>
+  </main>
 
-                  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                    <img src="assets/img/portfolio/analise-1.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <h4>Dash Boards Power BI Data Driven</h4>
-                      <p>Construção de dashboards financeiros, de logística e de vendas em Power BI, desenvolvendo indicadores estratégicos (KPIs).</p>
-                      <a href="assets/img/portfolio/app-2.jpg" title="Dashboards Power BI" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                      <a href="https://github.com/fabiuniz/py_powerbi" title="Mais Detalhes" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                    </div>
-                  </div>   
-                  
-                  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                    <img src="assets/img/portfolio/app-2_.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <h4>Microserviços com Java Spring Boot</h4>
-                      <p>Projeto didático focado em Java e Spring Boot para ilustrar a arquitetura de microserviços, incluindo a implementação de métricas de monitoramento (DevOps).</p>
-                      <a href="assets/img/portfolio/app-2_.jpg" title="Java Microservices" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                      <a href="https://github.com/fabiuniz/microservices-java" title="Mais Detalhes" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                    </div>
-                  </div>   
+  <footer id="footer" class="footer accent-background">
+    <div class="container text-center">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Fabiano Almeida</span></strong>. All Rights Reserved
+      </div>
+      <div class="social-links d-flex justify-content-center mt-3">
+        <a href="mailto:fabiuniz@msn.com"><i class="bi bi-envelope"></i></a>
+        <a href="https://github.com/fabiuniz"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/fabiano-rocha-de-almeida-dev"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
 
-                  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                    <img src="assets/img/portfolio/app-1_.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <h4>Previsão de Turnover (FastAPI/TensorFlow)</h4>
-                      <p>Projeto de Machine Learning para prever a rotatividade (turnover) de funcionários, utilizando o framework FastAPI para a API e TensorFlow para o modelo preditivo.</p>
-                      <a href="https://github.com/fabiuniz/turnover" title="Ver no GitHub" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                      <a href="assets/img/portfolio/app-1_.jpg" title="Previsão de Turnover" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    </div>
-                  </div>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
 
-                  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                    <img src="assets/img/portfolio/analise-1_.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <h4>Análise de Dados com Python</h4>
-                      <p>Exemplo de projeto de extração, limpeza e análise de dados utilizando as bibliotecas Pandas e NumPy, gerando insights para tomada de decisão.</p>
-                      <a href="assets/img/portfolio/analise-1_.jpg" title="Análise com Python" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                      <a href="https://github.com/fabiuniz/fato-dimensao" title="Mais Detalhes" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                    </div>
-                  </div>   
-                  <!--
-                  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                    <img src="assets/img/portfolio/app-3___.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <h4>Experimento com Docker e IoT</h4>
-                      <p>Protótipo de integração de dispositivos IoT com arquitetura de containers Docker, focado em coleta e processamento inicial de dados (edge computing).</p>
-                      <a href="assets/img/portfolio/app-3___.jpg" title="IoT e Docker" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                      <a href="https://github.com/fabiuniz/script_docker" title="Mais Detalhes" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                    <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <h4>Sistemas Trabalhistas (PHP/MySQL)</h4>
-                      <p>Desenvolvimento e manutenção de sistemas fullstack escaláveis para cálculos jurídicos trabalhistas, com foco em eficiência e automação de processos internos e externos.</p>
-                      <a href="assets/img/portfolio/app-1.jpg" title="Desenvolvimento Web" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                      <a href="https://github.com/fabiuniz/ctrlphp" title="Mais Detalhes" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                    </div>
-                  </div>   
-                  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                    <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <h4>Sistema de Gestão Interna (Delphi)</h4>
-                      <p>Desenvolvimento e otimização de sistemas internos essenciais para a operação da empresa, garantindo a integridade e o processamento de grandes volumes de dados.</p>
-                      <a href="assets/img/portfolio/app-1.jpg" title="Sistema em Delphi" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                      <a href="https://github.com/fabiuniz/CInicial" title="Mais Detalhes" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                    </div>
-                  </div>   
-                  -->
-
-                  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-devops">
-                    <img src="assets/img/portfolio/app-1__.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <h4>CI/CD com GitHub Actions e GCP</h4>
-                      <p>Exemplo de pipeline de Integração e Entrega Contínua (CI/CD) para uma aplicação Flask Dockerizada, utilizando GitHub Actions para automação e deploy no Google Cloud Platform (GCP).</p>
-                      <a href="https://github.com/fabiuniz/cicd" title="Ver no GitHub" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                      <a href="assets/img/portfolio/app-1__.jpg" title="CI/CD com GitHub Actions e GCP" data-gallery="portfolio-gallery-devops" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-devops">
-                    <img src="assets/img/portfolio/app-1___.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <h4>Gestão Escolar com DevOps (FastAPI/React/Docker)</h4>
-                      <p>Aplicação full-stack (FastAPI/React/Tailwind) containerizada com Docker, demonstrando práticas de desenvolvimento moderno e DevOps (Projeto Imersão Alura).</p>
-                      <a href="https://github.com/fabiuniz/gestaoedu" title="Ver no GitHub" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                      <a href="assets/img/portfolio/app-1___.jpg" title="Gestão Escolar com DevOps" data-gallery="portfolio-gallery-devops" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    </div>
-                  </div>
-
-                </div>  
-              </div>
-            </div>
-
-          </section> </main>
-
-          <footer id="footer" class="footer accent-background">
-            <div class="container">
-              <div class="copyright text-center ">
-                <p>© <span>Copyright</span> <strong class="px-1 sitename">DevFolio</strong> <span>All Rights Reserved</span></p>
-                <p>Perfis: <a href="https://www.linkedin.com/in/fabiano-rocha-de-almeida-dev">LinkedIn</a> | <a href="https://github.com/fabiuniz">GitHub</a></p>
-              </div>
-              <div class="social-links d-flex justify-content-center">
-                <a href="mailto:fabiuniz@msn.com"><i class="bi bi-envelope"></i></a>
-                <a href="https://github.com/fabiuniz"><i class="bi bi-github"></i></a>
-                <a href="https://www.linkedin.com/in/fabiano-rocha-de-almeida-dev"><i class="bi bi-linkedin"></i></a>
-              </div>
-              <div class="credits">
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-              </div>
-            </div>
-          </footer>
-
-          <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-          <div id="preloader"></div>
-          <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-          <script src="assets/vendor/php-email-form/validate.js"></script>
-          <script src="assets/vendor/aos/aos.js"></script>
-          <script src="assets/vendor/typed.js/typed.umd.js"></script>
-          <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-          <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-          <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-          <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-          <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-          <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-          <script src="assets/js/main.js"></script>
-        </body>
-
-        </html>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="portfolio.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
