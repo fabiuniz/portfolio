@@ -14,6 +14,11 @@ var portifolio = {
             "Tenho como principais habilidades PHP e MySQL, com experiências também em Java, Python, Delphi e JavaScript. Recentemente, busquei aperfeiçoamento em áreas como Ciência de Dados, Inteligência Artificial e Docker."
         ]
     },
+    "vagas": [
+        "AI Solutions Architect", 
+        "Cloud Platform Engineer", 
+        "GenAI Developer"
+    ],
     "skills": [
             { "name": "PHP | MySQL", "level": 100 },
             { "name": "Java | Spring Boot", "level": 75 },
@@ -98,7 +103,7 @@ var portifolio = {
         "projects": [
             {
                 "title": "Microserviços Java",
-                "category_class": "filter-branding",
+                "category_class": "filter-product",
                 "description": "Card System API - Santander/F1RST Challenge",
                 "img": "https://raw.githubusercontent.com/fabiuniz/card-system-api/main/images/fluxo.png",
                 "github_url": "https://github.com/fabiuniz/card-system-api"
