@@ -22,14 +22,16 @@ var portifolio = {
         "Data Engineer"
     ],
     "skills": [
-            { "name": "PHP | MySQL", "level": 100 },
-            { "name": "Java | Spring Boot", "level": 75 },
-            { "name": "Python | Data Science", "level": 80 },
-            { "name": "SQL (MySQL, PostgreSQL)", "level": 100 },
-            { "name": "Power BI | Dashboards", "level": 90 },
-            { "name": "Machine Learning | IA Generativa", "level": 70 },
-            { "name": "DevOps | Docker | CI/CD", "level": 70 }
-        ],    
+        { "name": "PHP | MySQL", "level": 100, "category": "Core Engineering & Architecture" },
+        { "name": "Java | Spring Boot", "level": 75, "category": "Core Engineering & Architecture" },
+        
+        { "name": "Python | Data Science", "level": 80, "category": "Data Intelligence & AI" },
+        { "name": "Machine Learning | IA Generativa", "level": 70, "category": "Data Intelligence & AI" },
+        { "name": "Power BI | Dashboards", "level": 90, "category": "Data Intelligence & AI" },
+
+        { "name": "DevOps | Docker | CI/CD", "level": 70, "category": "Infrastructure & DevOps" },
+        { "name": "SQL (MySQL, PostgreSQL)", "level": 100, "category": "Core Engineering & Architecture" }
+    ],
     "resume": {
         "objective": "Estou em busca de uma oportunidade para aplicar minha experiência em desenvolvimento e análise de dados, com foco em projetos que utilizem Java, SQL e fundamentos de Ciência de Dados. Meu objetivo é continuar aprendendo, colaborando e entregando soluções que gerem valor real para a empresa.",
         "education": [
@@ -47,9 +49,15 @@ var portifolio = {
             },
             {
                 "degree": "Certificações Recentes",
-                "period": "2024",
-                "institution": "Google Cloud / Alura",
-                "details": "IA Generativa, Fundamentos de Python para IA, Containers e Docker, Imersão Dev Agentes de IA, Imersão Dados com Python."
+                "period": "2024 - 2026",
+                "institution": "Google Cloud / Alura / Outros",
+                "certifications": [
+                    "AI Agents Acceleration - DIO/Microsoft (2026)",
+                    "Google Cloud Computing Foundations (2026)",
+                    "Advanced: Generative AI for Developers - Google (2025)",
+                    "DevOps - Santander + Alura (2025)", 
+                    "IA Generativa, Fundamentos de Python para IA, Containers e Docker, Imersão Dev Agentes de IA, Imersão Dados com Python."
+                ]
             }
         ],
         "experience": [
@@ -214,13 +222,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const eduBox = document.getElementById('resume-education');
     if(eduBox) {
-        eduBox.innerHTML = portifolio.resume.education.map(edu => `
-            <div class="resume-item">
-                <h4>${edu.degree}</h4>
-                <h5>${edu.period}</h5>
-                <p><em>${edu.institution}</em></p>
-                <p>${edu.details}</p>
-            </div>`).join('');
+        eduBox.innerHTML = portifolio.resume.education.map(edu => {
+            // Verifica se há detalhes ou certificações para exibir
+            const extraInfo = (edu.certifications ? `<ul>${edu.certifications.map(c => `<li>${c}</li>`).join('')}</ul>` : '');
+            return `
+                <div class="resume-item">
+                    <h4>${edu.degree}</h4>
+                    <h5>${edu.period}</h5>
+                    <p><em>${edu.institution}</em></p>
+                    ${extraInfo}
+                </div>`;
+        }).join('');
     }
 
     const expBox = document.getElementById('resume-experience-list');
@@ -235,8 +247,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>`).join('');
     }
 
-    // 4. Projetos (Portfólio)
-    // 4. Projetos (Portfólio)
+    // 4. Projetos (Portfólio)    
     const portBox = document.getElementById('portfolio-container');
     if(portBox) {
         // Gerar o HTML
@@ -289,4 +300,49 @@ document.addEventListener('DOMContentLoaded', () => {
             `<span class="vaga-item">${vaga}</span>`
         ).join('');
     }
+    // 5. Skills Dinâmicas com Injeção de Efeito Nativo
+    const skillsBox = document.getElementById('skills-wrapper');
+    if (skillsBox && portifolio.skills) {
+        // 1. Agrupar skills por categoria
+        const groupedSkills = portifolio.skills.reduce((acc, skill) => {
+            if (!acc[skill.category]) acc[skill.category] = [];
+            acc[skill.category].push(skill);
+            return acc;
+        }, {});
+
+        // 2. Gerar o HTML com títulos
+        let finalHtml = '';
+        for (const category in groupedSkills) {            
+            finalHtml += `<div class="col-12"><h5 class="skill-group-title">${category}</h5></div>`;
+            finalHtml += groupedSkills[category].map(skill => `
+                <div class="col-lg-6">
+                    <div class="progress">
+                        <span class="skill"><span>${skill.name}</span> <i class="val">${skill.level}%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" 
+                                 role="progressbar" 
+                                 data-level="${skill.level}" 
+                                 style="width: 0%; transition: width 1.5s ease-in-out;">
+                            </div>
+                        </div>
+                    </div>
+                </div>`).join('');
+        }
+        
+        skillsBox.innerHTML = finalHtml;
+
+        // 3. Re-aplicar o Observer para a animação
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const bar = entry.target;
+                    bar.style.width = bar.getAttribute('data-level') + '%';
+                    observer.unobserve(bar);
+                }
+            });
+        }, { threshold: 0.2 });
+
+        document.querySelectorAll('#skills-wrapper .progress-bar').forEach(bar => observer.observe(bar));
+    }    
+
 });
