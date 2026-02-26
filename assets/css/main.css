@@ -1619,7 +1619,18 @@ section,
   margin-right: 8px;
   color: var(--accent-color);
 }
+.vagas-container {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: #666; /* Cinza discreto */
+    font-weight: 500;
+}
 
+.vaga-item:not(:last-child)::after {
+    content: " | ";
+    color: #ccc;
+    margin: 0 8px;
+}
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/

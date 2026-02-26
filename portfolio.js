@@ -15,9 +15,11 @@ var portifolio = {
         ]
     },
     "vagas": [
-        "AI Solutions Architect", 
-        "Cloud Platform Engineer", 
-        "GenAI Developer"
+        "AI Solutions Architect",
+        "Backend Specialist (Java/PHP)",
+        "GenAI Developer",
+        "Cloud & Platform Engineer",
+        "Data Engineer"
     ],
     "skills": [
             { "name": "PHP | MySQL", "level": 100 },
@@ -102,53 +104,53 @@ var portifolio = {
     "portfolio": {
         "projects": [
             {
-                "title": "Microserviços Java",
-                "category_class": "filter-product",
-                "description": "Card System API - Santander/F1RST Challenge",
-                "img": "https://raw.githubusercontent.com/fabiuniz/card-system-api/main/images/fluxo.png",
-                "github_url": "https://github.com/fabiuniz/card-system-api"
+              "title": "Card System API - Santander",
+              "category_class": "filter-product",
+              "description": "Arquitetura de Microserviços com Spring Boot, JPA e PostgreSQL. Foco em alta disponibilidade e padrões de projeto para o setor financeiro.",
+              "img": "https://raw.githubusercontent.com/fabiuniz/card-system-api/main/images/fluxo.png",
+              "github_url": "https://github.com/fabiuniz/card-system-api"
+            },            
+            {
+              "title": "Análise de Dados Glicêmicos (PWA)",
+              "category_class": "filter-app",
+              "description": "Sistema moderno de saúde com análise de dados e visualização via Chart.js. Offline-first e integrado com Google Sheets API.",
+              "img": "https://raw.githubusercontent.com/fabiuniz/dextro/main/images/glicemia.png",
+              "github_url": "https://github.com/fabiuniz/dextro"
             },
             {
-                "title": "Automação com IA (YouTube)",
-                "category_class": "filter-branding",
-                "description": "Transcrição com Whisper e análise com Gemini.",
-                "img": "assets/img/portfolio/app-3_.jpg",
-                "github_url": "https://github.com/fabiuniz/yt-transcribe-ai"
+              "title": "Agente AI: Java Spring + Gemini",
+              "category_class": "filter-branding",
+              "description": "Implementação nativa em Java para orquestração de Agentes de IA utilizando a API do Google Gemini. Inteligência Generativa aplicada ao Backend.",
+              "img": "https://raw.githubusercontent.com/fabiuniz/agente_ai/main/images/screenshot.png",
+              "github_url": "https://github.com/fabiuniz/agente_ai"
             },
             {
-                "title": "Agente AI Google Gemini",
-                "category_class": "filter-branding",
-                "description": "Integração de IA com Java Spring Boot.",
-                "img": "assets/img/portfolio/app-3__.jpg",
-                "github_url": "https://github.com/fabiuniz/agente_ai"
+              "title": "Infraestrutura: GCP & GitHub Actions",
+              "category_class": "filter-devops",
+              "description": "Automação total de CI/CD utilizando GitHub Actions para deploy em containers Docker no Google Cloud Platform (GCP) e Heroku.",              
+              "img": "https://raw.githubusercontent.com/fabiuniz/catalog_node/main/catalog_node.png",
+              "github_url": "https://github.com/fabiuniz/catalog_node"
             },
             {
-                "title": "Dashboards Power BI",
-                "category_class": "filter-app",
-                "description": "Indicadores estratégicos e KPIs financeiros.",
-                "img": "assets/img/portfolio/analise-1.jpg",
-                "github_url": "https://github.com/fabiuniz/py_powerbi"
-            },
-            {
-                "title": "Microserviços Java",
-                "category_class": "filter-product",
-                "description": "Arquitetura distribuída e monitoramento DevOps.",
-                "img": "assets/img/portfolio/app-2_.jpg",
-                "github_url": "https://github.com/fabiuniz/microservices-java"
-            },
-            {
-                "title": "Previsão de Turnover",
-                "category_class": "filter-app",
-                "description": "Machine Learning com FastAPI e TensorFlow.",
-                "img": "assets/img/portfolio/app-1_.jpg",
-                "github_url": "https://github.com/fabiuniz/turnover"
+              "title": "Análise Preditiva de Turnover (ML)",
+              "category_class": "filter-app",
+              "description": "Modelo de Machine Learning em Python para prever a retenção de talentos. Une ciência de dados com inteligência de negócio corporativo.",
+              "img": "https://raw.githubusercontent.com/fabiuniz/turnover/main/static/banner.png",
+              "github_url": "https://github.com/fabiuniz/turnover"
             },
             {
                 "title": "Análise de Dados Python",
                 "category_class": "filter-app",
                 "description": "Limpeza e análise de dados com Pandas/NumPy.",
-                "img": "assets/img/portfolio/analise-1_.jpg",
-                "github_url": "https://github.com/fabiuniz/fato-dimensao"
+                "img": "https://raw.githubusercontent.com/fabiuniz/fato-dimessao/main/images/screenshot.png",
+                "github_url": "https://github.com/fabiuniz/fato-dimessao"
+            },
+            {
+                "title": "Gestão Escolar Docker",
+                "category_class": "filter-devops",
+                "description": "Full-stack (FastAPI/React) containerizado.",
+                "img": "assets/img/portfolio/app-1___.jpg",
+                "github_url": "https://github.com/fabiuniz/gestaoedu"
             },
             {
                 "title": "CI/CD com GitHub Actions",
@@ -158,11 +160,11 @@ var portifolio = {
                 "github_url": "https://github.com/fabiuniz/cicd"
             },
             {
-                "title": "Gestão Escolar Docker",
-                "category_class": "filter-devops",
-                "description": "Full-stack (FastAPI/React) containerizado.",
-                "img": "assets/img/portfolio/app-1___.jpg",
-                "github_url": "https://github.com/fabiuniz/gestaoedu"
+                "title": "Microserviços Java",
+                "category_class": "filter-product",
+                "description": "Arquitetura distribuída e monitoramento DevOps.",
+                "img": "assets/img/portfolio/app-2_.jpg",
+                "github_url": "https://github.com/fabiuniz/microservices-java"
             }
         ]
     }
@@ -279,5 +281,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Inicializar o GLightbox para os novos elementos
         const lightbox = GLightbox({ selector: '.glightbox' });
+    }
+    // Localize onde você quer inserir (ex: dentro de uma div com id 'vagas-list')
+    const vagasBox = document.getElementById('resume-vagas');
+    if(vagasBox && portifolio.vagas) {
+       vagasBox.innerHTML = portifolio.vagas.map(vaga => 
+            `<span class="vaga-item">${vaga}</span>`
+        ).join('');
     }
 });
