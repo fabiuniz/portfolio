@@ -175,14 +175,14 @@ var portifolio = {
                 "title": "Preço Casa Predictor - Quanto Vale Seu Imóvel",
                 "category_class": "filter-product",
                 "description": "Arquitetura distribuída e monitoramento DevOps.",
-                "img": "https://raw.githubusercontent.com/fabiuniz/fato-dimessao/main/images/screenshot.png",                
+                "img": "https://raw.githubusercontent.com/fabiuniz/fato-dimessao/main/images/screenshot.png",
                 "github_url": "https://github.com/fabiuniz/microservices-java"
             },
             {
                 "title": "Microserviços Java",
                 "category_class": "filter-product",
                 "description": "Java com Dados e IA",
-                "img": "assets/img/portfolio/app-2_.jpg",
+                "img": "https://raw.githubusercontent.com/fabiuniz/dados_java_ia/main/images/screenshot.png",
                 "github_url": "https://github.com/fabiuniz/dados_java_ia"
             }
             
