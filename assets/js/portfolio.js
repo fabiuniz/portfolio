@@ -33,7 +33,7 @@ var portifolio = {
         { "name": "SQL (MySQL, PostgreSQL)", "level": 100, "category": "Core Engineering & Architecture" }
     ],
     "resume": {
-        "objective": "Estou em busca de uma oportunidade para aplicar minha experiência em desenvolvimento e análise de dados, com foco em projetos que utilizem Java, SQL e fundamentos de Ciência de Dados. Meu objetivo é continuar aprendendo, colaborando e entregando soluções que gerem valor real para a empresa.",
+        "objective": "Estou em busca de uma oportunidade para aplicar minha experiência em desenvolvimento, Inteligência Artificial e análise de dados, com foco em projetos que utilizem Java, SQL e fundamentos de Ciência de Dados. Meu objetivo é continuar aprendendo, colaborando e entregando soluções que gerem valor real para a empresa.",
         "education": [
             {
                 "degree": "MBA em Gestão e Tecnologia da Informação",
