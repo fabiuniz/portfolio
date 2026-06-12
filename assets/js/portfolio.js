@@ -116,6 +116,13 @@ var portifolio = {
     "portfolio": {
         "projects": [
             {
+                "title": "Java AI & Engenharia de Prompt",
+                "category_class": "filter-product",
+                "description": "Blueprint de Desenvolvimento Orientado por IA: Budget AI API",
+                "img": "https://raw.githubusercontent.com/fabiuniz/dados_java_ia/main/images/screenshot.png",
+                "github_url": "https://github.com/fabiuniz/budget-ai-api"
+            },
+            {
               "title": "Card System API - Santander",
               "category_class": "filter-product",
               "description": "Arquitetura de Microserviços com Spring Boot, JPA e PostgreSQL. Foco em alta disponibilidade e padrões de projeto para o setor financeiro.",
