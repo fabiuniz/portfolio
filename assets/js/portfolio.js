@@ -117,9 +117,9 @@ var portifolio = {
         "projects": [
             {
                 "title": "Java AI & Engenharia de Prompt",
-                "category_class": "filter-product",
+                "category_class": "filter-branding",
                 "description": "Blueprint de Desenvolvimento Orientado por IA: Budget AI API",
-                "img": "https://raw.githubusercontent.com/fabiuniz/dados_java_ia/main/images/screenshot.png",
+                "img": "https://raw.githubusercontent.com/fabiuniz/budget-ai-api/main/images/screenshot.png",
                 "github_url": "https://github.com/fabiuniz/budget-ai-api"
             },
             {
@@ -180,7 +180,7 @@ var portifolio = {
             },
             {
                 "title": "Preço Casa Predictor - Quanto Vale Seu Imóvel",
-                "category_class": "filter-product",
+                "category_class": "filter-app",
                 "description": "Arquitetura distribuída e monitoramento DevOps.",
                 "img": "https://raw.githubusercontent.com/fabiuniz/fato-dimessao/main/images/screenshot.png",
                 "github_url": "https://github.com/fabiuniz/microservices-java"
