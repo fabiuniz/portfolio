@@ -3,7 +3,7 @@ var portifolio = {
         "name": "Fabiano Rocha de Almeida",
         "title": "Backend Dev & Data Science",
         "hero_typed_items_old": ["Fullstack Dev", "Java Spring Boot", "Data Science"],
-        "hero_typed_items": ["Desenvolvedor Backend (Java Spring Boot)", "SQL", "Data Analytics", "IA aplicada", "Docker", "Cloud Solutions Architecture"],
+        "hero_typed_items": ["Desenvolvedor Backend (Java Spring Boot)", "Data Analytics", "IA aplicada", "Cloud Solutions Architecture"],
         "email": "fabiuniz@msn.com",
         "linkedin": "https://www.linkedin.com/in/fabiano-rocha-de-almeida-dev",
         "github": "https://github.com/fabiuniz"
