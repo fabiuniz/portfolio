@@ -52,7 +52,7 @@ var portifolio = {
                 "period": "2024 - 2026",
                 "institution": "Google Cloud / Alura / Outros",
                 "certifications": [
-                    "AI Java Back-end (2026) - DIO/Santander",
+                    "AI Java Back-end - DIO/Santander (2026)",
                     "AI Agents Acceleration - DIO/Microsoft (2026)",
                     "Google Cloud Computing Foundations (2026)",
                     "Advanced: Generative AI for Developers - Google (2025)",
