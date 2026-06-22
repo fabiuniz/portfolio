@@ -15,6 +15,6 @@
 
 ## 👨‍💻 Autor
 
-# Acesse o portifólio aqui:
+# Acesse o portfólio aqui:
 
 [Fabiano Rocha/Fabiuniz](https://fabiuniz.github.io/portfolio/)
