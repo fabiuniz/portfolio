@@ -5,7 +5,7 @@
   technical_requirement: python, sql, looker_studio, git, data_science
   path_hook: hookfigma.hook1
 -->
-# 🎯Esse projeto é o meu portfólio de projetos pessoais e profissionais da área de dados.
+# 🎯Esse projeto é o meu portfólio de projetos profissionais.
 
 ## 📋 Visão Geral
 
@@ -15,6 +15,6 @@
 
 ## 👨‍💻 Autor
 
-# Acesse o portfólio aqui:
+### Acesse o portfólio aqui:
 
 [Fabiano Rocha/Fabiuniz](https://fabiuniz.github.io/portfolio/)
