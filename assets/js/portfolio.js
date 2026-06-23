@@ -22,15 +22,17 @@ var portifolio = {
         "Data Engineer"
     ],
     "skills": [
+        { "name": "Java | Spring Boot 21", "level": 95, "category": "Core Engineering & Architecture" },
+        { "name": "Observabilidade & SRE (Prometheus, Grafana)", "level": 80, "category": "Core Engineering & Architecture" },
+        { "name": "SQL (MySQL, PostgreSQL)", "level": 100, "category": "Core Engineering & Architecture" },
         { "name": "PHP | MySQL", "level": 100, "category": "Core Engineering & Architecture" },
-        { "name": "Java | Spring Boot", "level": 75, "category": "Core Engineering & Architecture" },
         
-        { "name": "Python | Data Science", "level": 80, "category": "Data Intelligence & AI" },
-        { "name": "Machine Learning | IA Generativa", "level": 70, "category": "Data Intelligence & AI" },
-        { "name": "Power BI | Dashboards", "level": 90, "category": "Data Intelligence & AI" },
+        { "name": "DevOps | Docker | CI/CD", "level": 85, "category": "Infrastructure & DevOps" },
+        
+        { "name": "Python | Data Science", "level": 85, "category": "Data Intelligence & AI" },
+        { "name": "Machine Learning | IA Generativa", "level": 85, "category": "Data Intelligence & AI" },
+        { "name": "Power BI | Dashboards", "level": 90, "category": "Data Intelligence & AI" }
 
-        { "name": "DevOps | Docker | CI/CD", "level": 70, "category": "Infrastructure & DevOps" },
-        { "name": "SQL (MySQL, PostgreSQL)", "level": 100, "category": "Core Engineering & Architecture" }
     ],
     "resume": {
         "objective": "Estou em busca de uma oportunidade para aplicar minha experiência em desenvolvimento, Inteligência Artificial e análise de dados, com foco em projetos que utilizem Java, SQL e fundamentos de Ciência de Dados. Meu objetivo é continuar aprendendo, colaborando e entregando soluções que gerem valor real para a empresa.",
