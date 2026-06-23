@@ -121,7 +121,7 @@ var portifolio = {
             {
                 "title": "Java AI & Engenharia de Prompt",
                 "category_class": "filter-branding",
-                "description": "Blueprint de Desenvolvimento Orientado por IA: Budget AI API",
+                "description": "O budget-ai-api é um microsserviço em Java 21 e Kotlin que usa Arquitetura Hexagonal e AWS SQS para converter áudios de transações financeiras em insights analíticos via IA do Google Gemini.",
                 "img": "https://raw.githubusercontent.com/fabiuniz/budget-ai-api/main/images/screenshot.png",
                 "github_url": "https://github.com/fabiuniz/budget-ai-api"
             },
@@ -147,9 +147,9 @@ var portifolio = {
               "github_url": "https://github.com/fabiuniz/agente_ai"
             },
             {
-              "title": "Infraestrutura: GCP & GitHub Actions",
+              "title": "Catálogo de PNGs com Servidor Estático e Enriquecimento Gemini",
               "category_class": "filter-devops",
-              "description": "Automação total de CI/CD utilizando GitHub Actions para deploy em containers Docker no Google Cloud Platform (GCP) e Heroku.",              
+              "description": "Este projeto é uma solução completa para indexar imagens PNG de uma pasta de rede (SMB/CIFS) e exibi-las em uma galeria web estática com funcionalidade de busca",              
               "img": "https://raw.githubusercontent.com/fabiuniz/catalog_node/main/catalog_node.png",
               "github_url": "https://github.com/fabiuniz/catalog_node"
             },
@@ -168,23 +168,23 @@ var portifolio = {
                 "github_url": "https://github.com/fabiuniz/fato-dimessao"
             },
             {
-                "title": "Gestão Escolar Docker",
+                "title": "Gestão Escolar (FastAPI/React) containerizado.",
                 "category_class": "filter-devops",
-                "description": "Full-stack (FastAPI/React) containerizado.",
+                "description": "O Sistema de Gestão Escolar é uma aplicação web moderna e completa para gerenciar alunos, cursos e matrículas em instituições de ensino.",
                 "img": "assets/img/portfolio/app-1___.jpg",
                 "github_url": "https://github.com/fabiuniz/gestaoedu"
             },
             {
-                "title": "CI/CD com GitHub Actions",
+                "title": "Aplicação Flask Dockerizada com CI/CD - Google Cloud Run & Heroku",
                 "category_class": "filter-devops",
-                "description": "Pipeline automatizado para deploy no GCP.",
+                "description": "Este projeto implementa uma aplicação web moderna em Flask com frontend estiloso, empacotada em Docker e com pipelines de CI/CD totalmente automatizados usando GitHub Actions para deploy.",
                 "img": "assets/img/portfolio/app-1__.jpg",
                 "github_url": "https://github.com/fabiuniz/cicd"
             },
             {
                 "title": "Preço Casa Predictor - Quanto Vale Seu Imóvel",
                 "category_class": "filter-app",
-                "description": "Arquitetura distribuída e monitoramento DevOps.",
+                "description": "Este projeto demonstra uma arquitetura de microserviços simples, construída com Java 21 e Spring Boot 3.2.5. O objetivo é ilustrar a comunicação entre serviços.",
                 "img": "https://raw.githubusercontent.com/fabiuniz/fato-dimessao/main/images/screenshot.png",
                 "github_url": "https://github.com/fabiuniz/microservices-java"
             },
@@ -194,7 +194,15 @@ var portifolio = {
                 "description": "Java com Dados e IA",
                 "img": "https://raw.githubusercontent.com/fabiuniz/dados_java_ia/main/images/screenshot.png",
                 "github_url": "https://github.com/fabiuniz/dados_java_ia"
+            },{
+                "title": "Microserviços Java - BTB Analytics Pipeline - Pharma Sector",
+                "category_class": "filter-app",
+                "description": "This repository features an automated data pipeline designed for Pharma invoice auditing for a Pharmaceutical client (LATAM). The primary goal is to convert raw vendor data into financial insights, pinpointing overcharges and optimizing operational expenses (OPEX).",
+                "img": "https://raw.githubusercontent.com/fabiuniz/datafarma/main/images/fluxo.png",
+                "github_url": "https://github.com/fabiuniz/datafarma"
             }
+            
+
             
         ]
     }
