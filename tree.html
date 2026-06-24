@@ -24,6 +24,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
     <style>
+    /* --- ESTILOS DO LOADER --- */
+        #page-loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: var(--background-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .spinner {
+            width: 60px;
+            height: 60px;
+            border: 6px solid rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            border-top-color: var(--link-hover-color);
+            animation: spin 1s linear infinite;
+        }
+
+        .loader-text {
+            color: #ffffff;
+            margin-top: 15px;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        /* ------------------------- */
         /* Variáveis CSS para facilitar a manutenção */
         :root {
             --background-color: #4f4f4f;
@@ -142,6 +178,10 @@
     </style>
 </head>
 <body>
+    <div id="page-loader">
+        <div class="spinner"></div>
+        <div class="loader-text">Carregando Árvore de Competências...</div>
+    </div>
     <object id="mySvgObject" data="assets/img/arvore_projetos.svg" type="image/svg+xml"></object>
 
     <a class="base-button libuttonlinkedin" href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=fabiano-rocha-de-almeida-dev" target="_blank">LinkedIn</a>
@@ -436,6 +476,14 @@
 
         // Inicia o processo quando o DOM estiver completamente carregado
         document.addEventListener('DOMContentLoaded', initializeSvgInteractions);
+        // SCRIPT PARA DESATIVAR O LOADER APÓS CARREGAMENTO TOTAL
+        window.onload = function() {
+            const loader = document.getElementById('page-loader');
+            loader.style.opacity = '0';
+            setTimeout(() => {
+                loader.style.display = 'none';
+            }, 500); // 500ms para terminar a animação de fade-out suave
+        };
     </script>
 </body>
 </html>
