@@ -171,14 +171,16 @@ var portifolio = {
                 "title": "Gestão Escolar (FastAPI/React) containerizado.",
                 "category_class": "filter-devops",
                 "description": "O Sistema de Gestão Escolar é uma aplicação web moderna e completa para gerenciar alunos, cursos e matrículas em instituições de ensino.",
-                "img": "assets/img/portfolio/app-1___.jpg",
+                //"img": "assets/img/portfolio/app-1___.jpg",
+                "img": "https://raw.githubusercontent.com/fabiuniz/gestaoedu/main/images/gestaoedu.png",
                 "github_url": "https://github.com/fabiuniz/gestaoedu"
             },
             {
                 "title": "Aplicação Flask Dockerizada com CI/CD - Google Cloud Run & Heroku",
                 "category_class": "filter-devops",
                 "description": "Este projeto implementa uma aplicação web moderna em Flask com frontend estiloso, empacotada em Docker e com pipelines de CI/CD totalmente automatizados usando GitHub Actions para deploy.",
-                "img": "assets/img/portfolio/app-1__.jpg",
+                //"img": "assets/img/portfolio/app-1__.jpg",
+                "img": "https://raw.githubusercontent.com/fabiuniz/cicd/main/images/appdockercicd.png",
                 "github_url": "https://github.com/fabiuniz/cicd"
             },
             {
@@ -194,16 +196,21 @@ var portifolio = {
                 "description": "Java com Dados e IA",
                 "img": "https://raw.githubusercontent.com/fabiuniz/dados_java_ia/main/images/screenshot.png",
                 "github_url": "https://github.com/fabiuniz/dados_java_ia"
-            },{
+            },
+            {
                 "title": "Microserviços Java - BTB Analytics Pipeline - Pharma Sector",
-                "category_class": "filter-app",
-                "description": "This repository features an automated data pipeline designed for Pharma invoice auditing for a Pharmaceutical client (LATAM). The primary goal is to convert raw vendor data into financial insights, pinpointing overcharges and optimizing operational expenses (OPEX).",
+                "category_class": "filter-product",
+                "description": "Este repositório contém um pipeline de dados automatizado desenvolvido para a auditoria de faturas de Pharma de um cliente do setor farmacêutico (LATAM). O objetivo é transformar dados brutos de operadoras em insights financeiros, identificando cobranças indevidas e otimizando o OPEX.",
                 "img": "https://raw.githubusercontent.com/fabiuniz/datafarma/main/images/fluxo.png",
                 "github_url": "https://github.com/fabiuniz/datafarma"
+            },
+            {
+                "title": "GameList",
+                "category_class": "filter-product",
+                "description": "O gmcatalog é uma aplicação backend desenvolvida com Java e o framework Spring Boot. Seu objetivo principal é gerenciar listas de jogos, permitindo a criação de listas personalizadas e a organização de jogos dentro dessas listas. A aplicação segue a arquitetura de uma API RESTful, possibilitando a interação com os dados por meio de requisições HTTP.",
+                "img": "https://raw.githubusercontent.com/fabiuniz/gmcatalog-rest/main/images/gmcatalog.png",
+                "github_url": "https://github.com/fabiuniz/gmcatalog-rest"
             }
-            
-
-            
         ]
     }
 };
