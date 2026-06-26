@@ -68,6 +68,7 @@ var portifolio = {
                 "role": "Desenvolvedor Fullstack/DS em Transição",
                 "company": "Em Transição de Carreira",
                 "period": "Out/2024 - Present",
+                "cbo":"2124-05",// 2515-10 / 1351-05
                 "achievements": [
                     "Aprimoramento de expertise em Java Spring Boot, Data Science e IA, com foco em Big Data, Machine Learning e DevOps.",
                     "Desenvolvimento de aplicações Spring Boot e microserviços, com foco em arquiteturas distribuídas e CI/CD.",
@@ -119,6 +120,13 @@ var portifolio = {
     "portfolio": {
         "projects": [
             {
+                "title": "Pipeline de Conciliação Bancária IA-Native de Missão Crítica.",
+                "category_class": "filter-branding",
+                "description": "O budget-ai-api é um microsserviço em Java 21 e Kotlin que usa Arquitetura Hexagonal e AWS SQS para converter áudios de transações financeiras em insights analíticos via IA do Google Gemini.",
+                "img": "https://raw.githubusercontent.com/fabiuniz/budget-ai-api/main/images/screenshot.png",
+                "github_url": "https://github.com/fabiuniz/budget-ai-api"
+            },
+            {
                 "title": "Java AI & Engenharia de Prompt",
                 "category_class": "filter-branding",
                 "description": "O budget-ai-api é um microsserviço em Java 21 e Kotlin que usa Arquitetura Hexagonal e AWS SQS para converter áudios de transações financeiras em insights analíticos via IA do Google Gemini.",
@@ -128,9 +136,9 @@ var portifolio = {
             {
               "title": "Card System API - Santander",
               "category_class": "filter-product",
-              "description": "Arquitetura de Microserviços com Spring Boot, JPA e PostgreSQL. Foco em alta disponibilidade e padrões de projeto para o setor financeiro.",
-              "img": "https://raw.githubusercontent.com/fabiuniz/card-system-api/main/images/fluxo.png",
-              "github_url": "https://github.com/fabiuniz/card-system-api"
+              "description": "O desenvolvimento passo a passo de um microsserviço de **Conciliação Bancária e Liquidação de Missão Crítica** IA-Native utilizando **Java 21 (Virtual Threads)**, **Kotlin (Coroutines)**, **Arquitetura Hexagonal**, **Mensageria Híbrida (Kafka/SQS)** e tolerância a falhas.",
+              "img": "https://raw.githubusercontent.com/fabiuniz/ledger-reconciliation-api/main/images/screenshot.png",
+              "github_url": "https://github.com/fabiuniz/ledger-reconciliation-api"
             },            
             {
               "title": "Análise de Dados Glicêmicos (PWA)",
