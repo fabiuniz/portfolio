@@ -34,6 +34,9 @@ var portifolio = {
         { "name": "Power BI | Dashboards", "level": 90, "category": "Data Intelligence & AI" }
 
     ],
+    "history":[
+        {"timeline":"tenho mais de 20 anos de jornada em analise de sistemas, a maior parte focada em sistemas de missão crítica e alta precisão de dados, fiz parte de uma equipe enxuta que fundou a minha última empresa, trabalhando diretamente com o Sr. Adalberto Amaral, nosso Diretor, o Him Ho Kim no Clipper e o Hideki Sato. Nós criamos e sustentamos um ecossistema que apoiava uma equipe de 7 calculistas, entregando 40 cálculos complexos por dia — o que dá mais de 900 cálculos cirúrgicos por mês. Ali, um centavo de erro causava um impacto jurídico e financeiro imenso desenvolvendo a precisão sobre as informações construí uma história de extrema lealdade lá. Infelizmente, por motivos estritos de saúde do Sr. Adalberto, ele tomou a decisão de encerrar as operações. Pela nossa relação de profunda confiança, ele me pediu para liderar e apoiar tecnicamente todo o processo de desligamento do ecossistema. Eu fui, literalmente, o último profissional a ser desligado e a apagar a luz da empresa. E desde o dia em que saí, eu tomei uma decisão: atuei todos os dias como se não tivesse sido desligado. Empreguei 100% do meu expediente ressignificar a minha carreira diante das novas tecnologias. Encontrei no Java 21 e no Spring Boot 3 o meu caminho seguro, e passei a transitar nativamente para o Kotlin, explorando o poder das Coroutines para alta concorrência."}
+    ],
     "resume": {
         "objective": "Estou em busca de uma oportunidade para aplicar minha experiência em desenvolvimento, Inteligência Artificial e análise de dados, com foco em projetos que utilizem Java, SQL e fundamentos de Ciência de Dados. Meu objetivo é continuar aprendendo, colaborando e entregando soluções que gerem valor real para a empresa.",
         "education": [
