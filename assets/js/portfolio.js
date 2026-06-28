@@ -122,9 +122,9 @@ var portifolio = {
             {
                 "title": "Pipeline de Conciliação Bancária IA-Native de Missão Crítica.",
                 "category_class": "filter-branding",
-                "description": "O budget-ai-api é um microsserviço em Java 21 e Kotlin que usa Arquitetura Hexagonal e AWS SQS para converter áudios de transações financeiras em insights analíticos via IA do Google Gemini.",
-                "img": "https://raw.githubusercontent.com/fabiuniz/budget-ai-api/main/images/screenshot.png",
-                "github_url": "https://github.com/fabiuniz/budget-ai-api"
+                "description": "Um microsserviço de Conciliação Bancária e Liquidação de Missão Crítica IA-Native utilizando Java 21 (Virtual Threads), Kotlin (Coroutines), Arquitetura Hexagonal, Mensageria Híbrida (Kafka/SQS) e tolerância a falhas.",
+                "img": "https://raw.githubusercontent.com/fabiuniz/ledger-reconciliation-api /main/images/screenshot.png",
+                "github_url": "https://github.com/fabiuniz/ledger-reconciliation-api "
             },
             {
                 "title": "Java AI & Engenharia de Prompt",
