@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -25,15 +25,22 @@
       <a href="index.html" class="logo d-flex align-items-center">
         <h1 class="sitename">Portfólio</h1>
       </a>
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active">Inicio<br></a></li>
-          <li><a href="#about">Sobre Mim</a></li>
-          <li><a href="#portfolio">Portfólio</a></li>
-          <li><a href="#about">Contato</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+      
+      <div class="d-flex align-items-center">
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#hero" class="active">Inicio<br></a></li>
+            <li><a href="#about">Sobre Mim</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#about">Contato</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+        
+        <button id="theme-toggle" class="btn text-reset fs-5 ms-3 p-1" style="z-index: 9999;" aria-label="Alternar tema">
+          <i class="bi bi-moon-fill" id="theme-icon"></i>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -44,14 +51,13 @@
         <h2>Fabiano Rocha de Almeida</h2>
         <p><span id="typed-element"></span></p>
       </div>
-
     </section>  
+    
     <section id="about" class="about section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4">
           <div class="col-md-6">
-            <div class="about-me" id="about-text">
-              </div>
+            <div class="about-me" id="about-text"></div>
           </div>
 
           <div class="col-md-6">
@@ -65,7 +71,7 @@
               <div class="social-links mt-3">
                  <a href="" id="contact-linkedin_lnk" target="_blank" class="btn btn-outline-primary btn-sm"><i class="bi bi-linkedin"></i> LinkedIn</a>
                  <a href="" id="contact-github_lnk" target="_blank" class="btn btn-outline-dark btn-sm"><i class="bi bi-github"></i> GitHub</a>
-                 <a href="" id="contact-email_lnk" target="_blank" class="btn btn-outline-dark btn-sm"><i class="bi bi-email"></i> Email</a>
+                 <a href="" id="contact-email_lnk" target="_blank" class="btn btn-outline-dark btn-sm"><i class="bi bi-envelope"></i> Email</a>
               </div>
             </div>
           </div>
@@ -73,107 +79,109 @@
       </div>
     </section>
 
-
-      <section id="resume" class="resume section">
-        <div class="container section-title" data-aos="fade-up">
+    <section id="resume" class="resume section">
+      <div class="container section-title" data-aos="fade-up">
         <h2>Currículo</h2>
         <p>Experiências e principais resultados gerados na minha carreira.</p>
-      </div> <div class="container">
+      </div> 
+      <div class="container">
         <div class="row">
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <h3 class="resume-title">Objetivo</h3>
             <div class="resume-item pb-0">
               <p><em id="resume-objective"></em></p>
-              <div id="resume-vagas" class="mt-3">
-              </div>
+              <div id="resume-vagas" class="mt-3"></div>
             </div>
             <h3 class="resume-title">Formação</h3>
             <div id="resume-education"></div> 
           </div>
-          <h3 class="resume-title">Tecnologias</h3>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Tecnologias</h3>
             <p>As principais ferramentas e técnicas que tenho experiência e me sinto confortável na utilização em diferentes contextos de negócio.</p>
-            <section id="skills" class="about section">
-              <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <section id="skills" class="about section p-0 shadow-none bg-transparent">
+              <div class="container p-0 shadow-none bg-transparent" data-aos="fade-up" data-aos-delay="100">
                 <div class="row gy-4">
-                  <div class="skills-content skills-animation" id="skills-wrapper">
+                  <div class="skills-content skills-animation w-100" id="skills-wrapper">
                     <h5>Desenvolvimento Web e Backend</h5>
                     <div class="progress">
                       <span class="skill"><span>PHP | MySQL</span> <i class="val">100%</i></span>
                       <div class="progress-bar-wrap">
                         <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                       </div>
-                    </div>     <div class="progress">
+                    </div>
+                    <div class="progress">
                       <span class="skill"><span>Java | Spring Boot</span> <i class="val">75%</i></span>
                       <div class="progress-bar-wrap">
                         <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                       </div>
-                    </div>     <div class="progress">
+                    </div>
+                    <div class="progress">
                       <span class="skill"><span>Python | Data Science</span> <i class="val">80%</i></span>
                       <div class="progress-bar-wrap">
                         <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                       </div>
-                    </div>     <h5>Análise de Dados e ML/IA</h5>
+                    </div>
+                    <h5 class="mt-4">Análise de Dados e ML/IA</h5>
                     <div class="progress">
                       <span class="skill"><span>SQL (MySQL, PostgreSQL)</span> <i class="val">100%</i></span>
                       <div class="progress-bar-wrap">
                         <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                       </div>
-                    </div>     <div class="progress">
+                    </div>
+                    <div class="progress">
                       <span class="skill"><span>Power BI | Dashboards</span> <i class="val">90%</i></span>
                       <div class="progress-bar-wrap">
                         <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                       </div>
-                    </div>     <div class="progress">
+                    </div>
+                    <div class="progress">
                       <span class="skill"><span>Machine Learning | IA Generativa</span> <i class="val">70%</i></span>
                       <div class="progress-bar-wrap">
                         <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                       </div>
-                    </div>     <div class="progress">
+                    </div>
+                    <div class="progress">
                       <span class="skill"><span>DevOps | Docker | CI/CD</span> <i class="val">70%</i></span>
                       <div class="progress-bar-wrap">
                         <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                       </div>
-                    </div>    </div>
+                    </div>
                   </div>
                 </div>
-
-              </section>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              </div>
+            </section>
+          </div>
+          <div class="col-lg-6 mt-4" data-aos="fade-up" data-aos-delay="200">
             <h3 class="resume-title">Experiência</h3>
             <div id="resume-experience-list"></div> 
           </div>
         </div>
       </div>
     </section> 
-
-  </div>
-
-    
-
-    <section id="portfolio" class="portfolio section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Portfólio de Projetos</h2>
-        <p>Soluções práticas desenvolvidas com foco em resultados de negócio.</p>
-      </div>
-      <div class="container">
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">Todos</li>
-            <li data-filter=".filter-app">Análise & Visualização</li>
-            <li data-filter=".filter-product">Backend</li>
-            <li data-filter=".filter-branding">IA</li>
-            <li data-filter=".filter-devops">DevOps</li>
-          </ul>
-          <div class="row gy-4 isotope-container" id="portfolio-container" data-aos="fade-up" data-aos-delay="200"></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact section">
-      <form action="" class="php-email-form d-none"></form>
-    </section>
-
   </main>
+
+  <section id="portfolio" class="portfolio section">
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Portfólio de Projetos</h2>
+      <p>Soluções práticas desenvolvidas com foco em resultados de negócio.</p>
+    </div>
+    <div class="container">
+      <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+        <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+          <li data-filter="*" class="filter-active">Todos</li>
+          <li data-filter=".filter-app">Análise & Visualização</li>
+          <li data-filter=".filter-product">Backend</li>
+          <li data-filter=".filter-branding">IA</li>
+          <li data-filter=".filter-devops">DevOps</li>
+        </ul>
+        <div class="row gy-4 isotope-container" id="portfolio-container" data-aos="fade-up" data-aos-delay="200"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact section">
+    <form action="" class="php-email-form d-none"></form>
+  </section>
 
   <footer id="footer" class="footer accent-background">
     <div class="container text-center">

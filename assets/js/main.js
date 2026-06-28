@@ -252,5 +252,40 @@
   }
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
+  
+   /* Theme */
+(function() {
+  const toggleBtn = document.getElementById('theme-toggle');
+  const themeIcon = document.getElementById('theme-icon');
+  const html = document.documentElement;
+
+  // 1. Verifica se é a PRIMEIRA VEZ do usuário no site. 
+  // Se for, força o 'dark' e já deixa salvo no navegador.
+  if (!localStorage.getItem('theme')) {
+    localStorage.setItem('theme', 'dark');
+  }
+
+  // 2. Agora lê o tema (que com certeza existirá e será 'dark' por padrão)
+  const currentTheme = localStorage.getItem('theme');
+  html.setAttribute('data-bs-theme', currentTheme);
+  updateIcon(currentTheme);
+
+  toggleBtn.addEventListener('click', function() {
+    const activeTheme = html.getAttribute('data-bs-theme');
+    const newTheme = activeTheme === 'light' ? 'dark' : 'light';
+    
+    html.setAttribute('data-bs-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    updateIcon(newTheme);
+  });
+
+  function updateIcon(theme) {
+    if (theme === 'dark') {
+      themeIcon.className = 'bi bi-sun-fill text-warning';
+    } else {
+      themeIcon.className = 'bi bi-moon-fill';
+    }
+  }
+})();
 
 })();

@@ -1637,3 +1637,35 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+[data-bs-theme="dark"] {
+  --background-color: #0f172a; /* Azul escuro sofisticado de fundo global */
+  --default-color: #cbd5e1;    /* Texto cinza claro confortável para leitura */
+  --heading-color: #ffffff;    /* Títulos em branco puro */
+  --surface-color: #1e293b;    /* Fundo dos cartões/caixas ligeiramente mais claro */
+  --contrast-color: #ffffff;   
+  --nav-dropdown-color: #cbd5e1;
+  --nav-dropdown-background-color: #1e293b;
+}
+
+/* Sombras suavizadas e adaptadas para o modo escuro */
+[data-bs-theme="dark"] .about .container,
+[data-bs-theme="dark"] .contact .info-wrap,
+[data-bs-theme="dark"] .contact .php-email-form {
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Ajuste de visibilidade para botões outline escuros no modo escuro */
+[data-bs-theme="dark"] .btn-outline-dark {
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+[data-bs-theme="dark"] .btn-outline-dark:hover {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+}
+
+/* Corrige a bolinha do lado esquerdo da linha do tempo do currículo */
+[data-bs-theme="dark"] .resume .resume-item::before {
+  background: #0f172a !important;
+}
