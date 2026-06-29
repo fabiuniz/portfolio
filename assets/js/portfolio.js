@@ -121,7 +121,14 @@ var portifolio = {
         ]
     },
     "portfolio": {
-        "projects": [
+        "projects": [        
+            {
+              "title": "Ledger Reconciliation AI API (TQI FinTech Edition)",
+              "category_class": "filter-product",
+              "description": "O desenvolvimento passo a passo de um microsserviço de **Conciliação Bancária e Liquidação de Missão Crítica** IA-Native utilizando **Java 21 (Virtual Threads)**, **Kotlin (Coroutines)**, **Arquitetura Hexagonal**, **Mensageria Híbrida (Kafka/SQS)** e tolerância a falhas.",
+              "img": "https://raw.githubusercontent.com/fabiuniz/ledger-reconciliation-api/main/images/screenshot.png",
+              "github_url": "https://github.com/fabiuniz/ledger-reconciliation-api"
+            },            
             {
                 "title": "Java AI & Engenharia de Prompt",
                 "category_class": "filter-branding",
@@ -130,12 +137,12 @@ var portifolio = {
                 "github_url": "https://github.com/fabiuniz/budget-ai-api"
             },
             {
-              "title": "Card System API - Santander",
-              "category_class": "filter-product",
-              "description": "O desenvolvimento passo a passo de um microsserviço de **Conciliação Bancária e Liquidação de Missão Crítica** IA-Native utilizando **Java 21 (Virtual Threads)**, **Kotlin (Coroutines)**, **Arquitetura Hexagonal**, **Mensageria Híbrida (Kafka/SQS)** e tolerância a falhas.",
-              "img": "https://raw.githubusercontent.com/fabiuniz/ledger-reconciliation-api/main/images/screenshot.png",
-              "github_url": "https://github.com/fabiuniz/ledger-reconciliation-api"
-            },            
+                "title": "Card System API - Santander",
+                "category_class": "filter-branding",
+                "description": "ste projeto é um Microserviço focado no processamento de transações de cartões, desenvolvido como parte do processo seletivo para a posição de Analista de Sistemas III.",
+                "img": "https://raw.githubusercontent.com/fabiuniz/card-system-api/main/images/fluxo.png",
+                "github_url": "https://github.com/fabiuniz/card-system-api"
+            },
             {
               "title": "Análise de Dados Glicêmicos (PWA)",
               "category_class": "filter-app",
