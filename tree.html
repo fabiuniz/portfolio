@@ -68,12 +68,13 @@
             --link-color: black;
             --link-hover-color: yellow;
             --linkedin-bg: #0A66C2;
+            --portfolio-bg: #C2990A;
             --github-bg: #333;
             --border-color: rgba(0, 0, 0, 0.1);
             --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             --border-radius: 8px;
             --button-text-color: #ffffff;
-            --button-width: 20rem;
+            --button-width: 10rem;
             --button-height: 3rem;
             --button-font-size: 2.5rem;
             --button-padding: 0.5rem;
@@ -140,18 +141,27 @@
             top: 2vw;
         }
 
-        .libuttonlinkedin {
-            left: 2.5vw;
-            width: var(--button-width);
-            background-color: var(--linkedin-bg);
-        }
-
         .libuttongithub {
             left: 2.5vw;
             width: var(--button-width);
+            height: calc(var(--button-height)/3);
             background-color: var(--github-bg);
-            top: calc(2.5vw + var(--button-height) + var(--spacing-small));
         }
+        .libuttonlinkedin {
+            left: 2.5vw;
+            top: calc(var(--button-height) + var(--spacing-small));
+            height: calc(var(--button-height)/3);
+            width: var(--button-width);
+            background-color: var(--linkedin-bg);
+        }
+        .libuttonportfolio {
+            left: 2.5vw;
+            top: calc(4.5vw + var(--button-height) + var(--spacing-small));
+            width: var(--button-width);
+            height: calc(var(--button-height)/3);
+            background-color: var(--portfolio-bg);
+        }
+
 
         .libuttongithub img {
             max-width: 100%;
@@ -160,21 +170,25 @@
 
         @media (max-width: 768px) {
             .base-button {
+                left: 5.75vw;
+                top: 8.75vw;
                 width: calc(var(--button-width) / 5); /* Ajustado para ser mais proporcional */
                 height: calc(var(--button-height) / 3);
                 padding: calc(var(--button-padding) / 5);
                 font-size: calc(var(--button-font-size) / 7);
-                left: 5.75vw;
-                top: 8.75vw;
-            }
-
-            .libuttonlinkedin {
-                left: 5.75vw;
             }
 
             .libuttongithub {
-                top: calc(9vw + calc(var(--button-height) / 3) + calc(var(--button-padding) / 5));
+                left: 5.75vw;
             }
+            .libuttonlinkedin {
+                left: 5.75vw;
+                top: calc(14vw + calc(var(--button-height) / 3) + calc(var(--button-padding) / 5));
+            }
+            .libuttonportfolio {
+                left: 5.75vw;  
+                top: calc(9vw + calc(var(--button-height) / 3) + calc(var(--button-padding) / 5));
+            }   
         }
     </style>
 </head>
@@ -186,6 +200,7 @@
     <object id="mySvgObject" data="assets/img/arvore_projetos.svg" type="image/svg+xml"></object>
 
     <a class="base-button libuttonlinkedin" href="https://www.linkedin.com/in/fabiano-rocha-de-almeida-dev/" target="_blank">LinkedIn</a>
+    <a class="base-button libuttonportfolio" href="index.html">Portfólio</a>
     <a class="base-button libuttongithub" href="https://github.com/fabiuniz" target="_blank">
         <img alt="GitHub followers" src="https://img.shields.io/github/followers/fabiuniz?style=social">
     </a>
