@@ -2,8 +2,8 @@ var portifolio = {
     "profile": {
         "name": "Fabiano Rocha de Almeida",
         "title": "Backend Dev & Data Science",
-        "hero_typed_items_old": ["Fullstack Dev", "Java Spring Boot", "Data Science"],
-        "hero_typed_items": ["Desenvolvedor Backend (Java Spring Boot)", "Data Analytics", "IA aplicada", "Cloud Solutions Architecture"],
+        "hero_typed_items": ["Analista de sistemas", "Java Spring Boot + Kotlin"],
+        "hero_typed_items_old": ["Desenvolvedor Backend (Java Spring Boot)", "Data Analytics", "IA aplicada", "Cloud Solutions Architecture"],
         "email": "fabiuniz@msn.com",
         "linkedin": "https://www.linkedin.com/in/fabiano-rocha-de-almeida-dev",
         "github": "https://github.com/fabiuniz"
@@ -68,7 +68,7 @@ var portifolio = {
         ],
         "experience": [
             {
-                "role": "Desenvolvedor Fullstack/DS em Transição",
+                "role": "Desenvolvedor Backend Java Spring Boot + Kotlin",
                 "company": "Em Transição de Carreira",
                 "period": "Out/2024 - Present",
                 "cbo":"2124-05",// 2515-10 / 1351-05
