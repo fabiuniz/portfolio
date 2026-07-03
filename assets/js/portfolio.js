@@ -1,7 +1,7 @@
 var portifolio = {
     "profile": {
         "name": "Fabiano Rocha de Almeida",
-        "title": "Backend Dev & Data Science",
+        "title": "Analista de sistemas (Java Spring Boot+Kotlin)",
         "hero_typed_items": ["Analista de sistemas", "Java Spring Boot + Kotlin"],
         "hero_typed_items_old": ["Desenvolvedor Backend (Java Spring Boot)", "Data Analytics", "IA aplicada", "Cloud Solutions Architecture"],
         "email": "fabiuniz@msn.com",
@@ -16,7 +16,7 @@ var portifolio = {
     },
     "vagas": [
         "AI Solutions Architect",
-        "Backend Specialist (Java/PHP)",
+        "Backend Specialist (Java+Kotlin/PHP)",
         "GenAI Developer",
         "Cloud & Platform Engineer",
         "Data Engineer"
