@@ -231,26 +231,27 @@
         // Use const para valores que não mudam
         const hookfigma = {
             hook0: "path_00000000000000000000000000000000000000000000000000", // vazio
-            hook1: "path_M158097334742H15795L158377323105H158522L1589533474", // DadosIA --> analise de dados
-            hook2: "path_M15805531005H158218L158613540664H158627L1590225310", // DadosIA --> machine elairne
-            hook3: "path_M158097702999H15795L158377691363H158522L1589570299", // DadosIA --> automação
-            hook4: "path_M167161943381V955017H16702V943381H167161ZM16755994", // IoT      --> internet das coisas
-            hook5: "path_M16702113511V112347H167161V112865H167781V112347H16", // IoT      --> Hardware e eletronica
-            hook6: "path_M153024141478H152883C15287514143715286141402152841", // DevOps   --> containers
-            hook7: "path_M600312172618V171454H60438C60519117145460585917146", // Dev      --> backend
-            hook8: "path_M600312155061V153898H607289V154023H601721V154416H6", // Dev      --> frontend
-            hook9: "path_M352025100132H337253L37998989681H394525L4372531001", // Fund     --> arquitetura de software
-            hook10: "path_M347253865872V854235H361343V864622H415434V865872H3", // Fund     -->linguagens
-            hook11: "path_M203205154498V153334H207273C2080841533342087521533", // Dev      -->Banco de dados
-            hook12: "path_M347253112517V111354H361343V112392H415434V112517H3", // Fund     -->logica e extrutura de dados
-            hook13: "path_M11501664591C11494266401511466666356811418166325C1", // Skils    -->skils
-            hook14: "path_M203205165334H204887L2088411663H208978L21293216533", // Monolíto -->Monolíto
-            hook15: "path_M345577370333V358696H352555V359946H346986V363878H3", // Seguranca --> fund
-            hook16: "path_M203205177134H204887L2088411781H208978L21293217713", // Dev      --> Mobile
-            hook17: "path_M110056547603V559239H108647V547603H110056ZM1140455", // Skils    -->ingles
-            hook18: "path_M11286414149H112723C112715141449112714141411267914", // DevOps   --> ci/cd"
-            hook19: "path_M112864162168H112723C11271516212711271620921126791", // DevOps   --> nuvem
-            hook20: "path_M112068152466V153629H111927V152466H112068ZM1124671" // DevOps   --> nuvem IaC
+            hook1: "path_M158089334333H157941L158369322696H158514L158941334", // DadosIA --> Analise de Visualização dados
+            hook2: "path_M158041530596H15821L158605540255H158619L1590145305", // DadosIA --> Machine elairne
+            hook3: "path_M15808970259H157941L158369690954H158514L1589417025", // DadosIA --> automação
+            hook4: "path_M167152942971V954608H167011V942971H167152ZM1675519", // IoT      --> internet das coisas
+            hook5: "path_M16701111347V112306H167152V112824H167773V112306H16", // IoT      --> Hardware e eletronica
+            hook6: "path_M153016141437H152875C15286714139615285214136115283", // DevOps   --> containers
+            hook7: "path_M600229172577V171413H604297C6051081714136057771714", // Dev      --> backend
+            hook8: "path_M60022915502V153857H607206V153982H601638V154375H60", // Dev      --> frontend
+            hook9: "path_M351198100091H336425L379152989271H393698L436425100", // Fund     --> arquitetura de software
+            hook10: "path_M346425865462V853826H360516V864212H414607V865462H3", // Fund     -->linguagens
+            hook11: "path_M203122154457V153293H20719C20800115329320867153307", // Dev      -->Banco de dados
+            hook12: "path_M346425112476V111313H360516V112351H414607V112476H3", // Fund     -->logica e extrutura de dados
+            hook13: "path_M114928664182C114859663606114583663159114098662841", // Skils    -->skils
+            hook14: "path_M203122165293H204804L208759166259H208895L212849165", // Monolíto -->Monolíto
+            hook15: "path_M115813424099H885978C87893342409987322143261187322", // Seguranca --> fund
+            hook16: "path_M203122177093H204804L208759178059H208895L212849177", // Dev      --> Mobile
+            hook17: "path_M109973547194V55883H108564V547194H109973ZM11395755", // Skils    -->ingles
+            hook18: "path_M112855141449H112715C11270614140911269214137311267", // DevOps   --> ci/cd"
+            hook19: "path_M112855162127H112715C11270616208611269216205111267", // DevOps   --> nuvem
+            hook20: "path_M11206152425V153588H111919V152425H11206ZM112458153", // DevOps   --> nuvem IaC
+            hook21: "path_M112555171392C11254917133511252117129112473171258C"  // DevOps   --> SRE
         };
         const github = "https://github.com/fabiuniz";
 
@@ -456,8 +457,8 @@
                 const dAttribute = path.getAttribute('d');
                 if (dAttribute) {
                     const generatedId = `path_${dAttribute.replace(/[^a-zA-Z0-9_]/g, '').substring(0, 50)}`;
-                    console.log(generatedId);
                     console.log(path);
+                    console.log(generatedId);
                 }
             });
         }
