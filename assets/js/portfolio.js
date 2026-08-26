@@ -1,7 +1,7 @@
 var portifolio = {
     "profile": {
         "name": "Fabiano Rocha de Almeida",
-        "title": "Analista de sistemas (Java Spring Boot+Kotlin)",
+        "title": "Analista de sistemas (Java Spring Boot + Kotlin)",
         "hero_typed_items": ["Analista de sistemas", "Java Spring Boot + Kotlin"],
         "hero_typed_items_old": ["Desenvolvedor Backend (Java Spring Boot)", "Data Analytics", "IA aplicada", "Cloud Solutions Architecture"],
         "email": "fabiuniz@msn.com",
@@ -16,7 +16,7 @@ var portifolio = {
     },
     "vagas": [
         "AI Solutions Architect",
-        "Backend Specialist (Java+Kotlin/PHP)",
+        "Backend Specialist (Java + Kotlin/PHP)",
         "GenAI Developer",
         "Cloud & Platform Engineer",
         "Data Engineer"
@@ -117,10 +117,17 @@ var portifolio = {
         ],
         "idiomas": [
             { "nome": "Inglês (Limited Working)", "exibir": true },
-            { "nome": "Inglês médio (CEFR B1-B2) - Score 89 Duolingo (Feb/2026)", "exibir": true }
+            { "nome": "Inglês médio (CEFR B1-B2) - Score 103 Duolingo (ago/2026)", "exibir": true }
         ]
     },
     "portfolio": {
+        "filters": [
+            { "label": "Todos", "filter": "*" },
+            { "label": "Análise & Visualização", "filter": ".filter-app" },
+            { "label": "Backend", "filter": ".filter-product" },
+            { "label": "IA", "filter": ".filter-branding" },
+            { "label": "DevOps", "filter": ".filter-devops" }
+        ],
         "projects": [        
             {
               "title": "Ledger Reconciliation AI API (TQI FinTech Edition)",
