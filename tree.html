@@ -440,6 +440,27 @@
             });
         }
         /**
+         * Localizando path para associação dos hooks
+         */
+        function get_all_paths() {
+            // Tenta pegar pelo objeto ou usa o document padrão
+            let svgObject = document.getElementById('mySvgObject');
+            // Se for um <object> ou <iframe>, pegamos o documento interno dele:
+            let targetDoc = svgObject && svgObject.contentDocument ? svgObject.contentDocument : document;
+            const paths = targetDoc.querySelectorAll('path');
+            if (paths.length === 0) {
+                console.warn("Nenhum path encontrado. Verifique se o SVG já terminou de carregar ou se está dentro de um iframe.");
+                return;
+            }
+            paths.forEach(path => {
+                const dAttribute = path.getAttribute('d');
+                if (dAttribute) {
+                    const generatedId = `path_${dAttribute.replace(/[^a-zA-Z0-9_]/g, '').substring(0, 50)}`;
+                    console.log(generatedId);
+                }
+            });
+        }
+        /**
          * Atribui IDs a elementos SVG se não tiverem e então adiciona os links.
          */
         function initializeSvgInteractions() {
@@ -500,6 +521,7 @@
             loader.style.opacity = '20%';
             setTimeout(() => {
                 loader.style.display = 'none';
+                //get_all_paths();
             }, 500); // 500ms para terminar a animação de fade-out suave
         };
     </script>
