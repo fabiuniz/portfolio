@@ -1,44 +1,49 @@
 var portifolio = {
     "profile": {
         "name": "Fabiano Rocha de Almeida",
-        "title": "Analista de sistemas (Java Spring Boot + Kotlin)",
-        "hero_typed_items": ["Analista de sistemas", "Java Spring Boot + Kotlin"],
-        "hero_typed_items_old": ["Desenvolvedor Backend (Java Spring Boot)", "Data Analytics", "IA aplicada", "Cloud Solutions Architecture"],
+        "title": "Analista de Sistemas Sênior (Sistemas Críticos & Backend)",
+        "hero_typed_items": [
+            "Analista de Sistemas Sênior",
+            "Sistemas de Missão Crítica",
+            "Java Spring Boot + Kotlin",
+            "PHP & Arquitetura de Dados"
+        ],
+        "hero_typed_items_old": [
+            "Analista de sistemas",
+            "Java Spring Boot + Kotlin"
+        ],
         "email": "fabiuniz@msn.com",
         "linkedin": "https://www.linkedin.com/in/fabiano-rocha-de-almeida-dev",
         "github": "https://github.com/fabiuniz"
     },
     "about": {
         "description": [
-            "Sou profissional de TI com mais de 23 anos de experiência em análise de sistemas e desenvolvimento de software. Atuei grande parte da minha carreira no segmento trabalhista, onde pude aprender e evoluir em projetos que uniam tecnologia e eficiência.",
-            "Tenho como principais habilidades PHP e MySQL, com experiências também em Java, Python, Delphi e JavaScript. Recentemente, busquei aperfeiçoamento em áreas como Ciência de Dados, Inteligência Artificial e Docker."
+            "Sou profissional de TI com mais de 23 anos de experiência em análise de sistemas e desenvolvimento de software de missão crítica. Atuei grande parte da minha carreira liderando ecossistemas que exigiam exatidão cirúrgica e alta disponibilidade de dados.",
+            "Possuo domínio profundo em arquitetura de sistemas, PHP, MySQL e modelagem de dados, com sólida evolução atual para Java 21, Spring Boot e Kotlin, unindo a robustez de sistemas legados com a engenharia moderna."
         ]
     },
     "vagas": [
-        "AI Solutions Architect",
+        "Analista de Sistemas Sênior",
         "Backend Specialist (Java + Kotlin/PHP)",
-        "GenAI Developer",
+        "Tech Lead / Arquiteto de Soluções",
         "Cloud & Platform Engineer",
         "Data Engineer"
     ],
     "skills": [
+        { "name": "Análise de Sistemas & Missão Crítica", "level": 100, "category": "Core Engineering & Architecture" },
         { "name": "Java | Spring Boot 21", "level": 95, "category": "Core Engineering & Architecture" },
-        { "name": "Observabilidade & SRE (Prometheus, Grafana)", "level": 80, "category": "Core Engineering & Architecture" },
         { "name": "SQL (MySQL, PostgreSQL)", "level": 100, "category": "Core Engineering & Architecture" },
-        { "name": "PHP | MySQL", "level": 100, "category": "Core Engineering & Architecture" },
-        
+        { "name": "PHP | Arquitetura Backend", "level": 100, "category": "Core Engineering & Architecture" },
         { "name": "DevOps | Docker | CI/CD", "level": 85, "category": "Infrastructure & DevOps" },
-        
-        { "name": "Python | Data Science", "level": 85, "category": "Data Intelligence & AI" },
-        { "name": "Machine Learning | IA Generativa", "level": 85, "category": "Data Intelligence & AI" },
-        { "name": "Power BI | Dashboards", "level": 90, "category": "Data Intelligence & AI" }
-
+        { "name": "Python | IA Generativa & Dados", "level": 85, "category": "Data Intelligence & AI" }
     ],
-    "history":[
-        {"timeline":"tenho mais de 20 anos de jornada em analise de sistemas, a maior parte focada em sistemas de missão crítica e alta precisão de dados, fiz parte de uma equipe enxuta que fundou a minha última empresa, trabalhando diretamente com o Sr. Adalberto Amaral, nosso Diretor, o Him Ho Kim no Clipper e o Hideki Sato. Nós criamos e sustentamos um ecossistema que apoiava uma equipe de 7 calculistas, entregando 40 cálculos complexos por dia — o que dá mais de 900 cálculos cirúrgicos por mês. Ali, um centavo de erro causava um impacto jurídico e financeiro imenso desenvolvendo a precisão sobre as informações construí uma história de extrema lealdade lá. Infelizmente, por motivos estritos de saúde do Sr. Adalberto, ele tomou a decisão de encerrar as operações. Pela nossa relação de profunda confiança, ele me pediu para liderar e apoiar tecnicamente todo o processo de desligamento do ecossistema. Eu fui, literalmente, o último profissional a ser desligado e a apagar a luz da empresa. E desde o dia em que saí, eu tomei uma decisão: atuei todos os dias como se não tivesse sido desligado. Empreguei 100% do meu expediente ressignificar a minha carreira diante das novas tecnologias. Encontrei no Java 21 e no Spring Boot 3 o meu caminho seguro, e passei a transitar nativamente para o Kotlin, explorando o poder das Coroutines para alta concorrência."}
+    "history": [
+        {
+            "timeline": "Tenho mais de 20 anos de jornada em análise de sistemas, a maior parte focada em sistemas de missão crítica e alta precisão de dados. Fiz parte de uma equipe enxuta que fundou a minha última empresa, trabalhando diretamente com diretores e especialistas para sustentar um ecossistema que apoiava calculistas com dezenas de entregas diárias de altíssima complexidade jurídica e financeira. Fui o responsável técnico por liderar todo o processo de encerramento e desligamento seguro do ecossistema tecnológico. Desde então, atuo intensamente na modernização e ressignificação da minha carreira para Java 21, Spring Boot e arquiteturas distribuídas com Kotlin."
+        }
     ],
     "resume": {
-        "objective": "Estou em busca de uma oportunidade para aplicar minha experiência em desenvolvimento, Inteligência Artificial e análise de dados, com foco em projetos que utilizem Java, SQL e fundamentos de Ciência de Dados. Meu objetivo é continuar aprendendo, colaborando e entregando soluções que gerem valor real para a empresa.",
+        "objective": "Aplicar minha sólida bagagem de mais de duas décadas em análise de sistemas e engenharia de backend para projetar, sustentar e otimizar ecossistemas de missão crítica que exijam alta precisão, performance e confiabilidade.",
         "education": [
             {
                 "degree": "MBA em Gestão e Tecnologia da Informação",
@@ -61,33 +66,33 @@ var portifolio = {
                     "AI Agents Acceleration - DIO/Microsoft (2026)",
                     "Google Cloud Computing Foundations (2026)",
                     "Advanced: Generative AI for Developers - Google (2025)",
-                    "DevOps - Santander + Alura (2025)", 
+                    "DevOps - Santander + Alura (2025)",
                     "IA Generativa, Fundamentos de Python para IA, Containers e Docker, Imersão Dev Agentes de IA, Imersão Dados com Python."
                 ]
             }
         ],
         "experience": [
             {
-                "role": "Desenvolvedor Backend Java Spring Boot + Kotlin",
-                "company": "Em Transição de Carreira",
+                "role": "Analista de Sistemas Sênior / Backend Engineer",
+                "company": "Em Transição de Carreira & Projetos Avançados",
                 "period": "Out/2024 - Present",
-                "cbo":"2124-05",// 2515-10 / 1351-05
+                "cbo": "2124-05",
                 "achievements": [
-                    "Aprimoramento de expertise em Java Spring Boot, Data Science e IA, com foco em Big Data, Machine Learning e DevOps.",
-                    "Desenvolvimento de aplicações Spring Boot e microserviços, com foco em arquiteturas distribuídas e CI/CD.",
-                    "Criação de projetos práticos e contribuições open-source para demonstrar domínio de novas tecnologias."
+                    "Desenvolvimento de microsserviços avançados em Java 21, Spring Boot e Kotlin com arquitetura hexagonal.",
+                    "Implementação de soluções nativas de mensageria, mensageria híbrida (Kafka/SQS) e tolerância a falhas.",
+                    "Estudos aplicados de IA Generativa e pipelines de dados orientados a backend corporativo."
                 ],
-                "stack": "Java, Spring Boot, Python, SQL, Docker, Machine Learning, IA"
+                "stack": "Java, Spring Boot, Kotlin, Kafka, Docker, Python, SQL"
             },
             {
                 "role": "Analista de Sistemas Sênior",
                 "company": "Newcap - Cálculos Trabalhistas",
                 "period": "Jan/2020 - Out/2024",
+                "cbo": "2515-10",
                 "achievements": [
-                    "Desenvolvimento fullstack e engenharia de software para sistemas de cálculos trabalhistas.",
-                    "Criação de sistemas escaláveis utilizando Delphi, PHP e JavaScript.",
-                    "Implementação de integração via API REST, automação de cálculos e otimização de processos com CI/CD.",
-                    "Mentoria técnica e liderança de projetos de desenvolvimento."
+                    "Liderança técnica e desenvolvimento fullstack para sistemas corporativos de altíssima precisão de dados.",
+                    "Arquitetura de integrações via API REST, automação de processos de cálculo e modernização de pipelines.",
+                    "Condução técnica completa do encerramento das operações e desligamento seguro do ecossistema da empresa."
                 ],
                 "stack": "PHP, MySQL, Delphi, JavaScript, CI/CD, API REST"
             },
@@ -96,10 +101,8 @@ var portifolio = {
                 "company": "Newcap - Cálculos Trabalhistas",
                 "period": "Jan/2006 - Dez/2019",
                 "achievements": [
-                    "Responsável pela arquitetura e otimização de software para processos jurídicos.",
-                    "Automação de cálculos e análise de dados trabalhistas para apoio à decisão.",
-                    "Desenvolvimento de sistemas internos e externos.",
-                    "Redesign de software para melhor segurança e escalabilidade."
+                    "Responsável pela arquitetura, segurança e otimização de software para processos jurídicos complexos.",
+                    "Desenvolvimento de rotinas automatizadas de auditoria e validação de dados em larga escala."
                 ],
                 "stack": "PHP, MySQL, Delphi, Levantamento de Requisitos"
             },
@@ -108,11 +111,9 @@ var portifolio = {
                 "company": "Newcap - Cálculos Trabalhistas",
                 "period": "Jan/2002 - Dez/2005",
                 "achievements": [
-                    "Atuação na infraestrutura de sistemas, suporte técnico e manutenção de software.",
-                    "Suporte técnico especializado para usuários internos e clientes.",
-                    "Administração de servidores e redes para garantia de alta disponibilidade."
+                    "Administração de servidores, redes e garantia de alta disponibilidade para o ambiente de produção."
                 ],
-                "stack": "Suporte Técnico, Redes"
+                "stack": "Suporte Técnico, Redes, Servidores"
             }
         ],
         "idiomas": [
@@ -128,14 +129,14 @@ var portifolio = {
             { "label": "IA", "filter": ".filter-branding" },
             { "label": "DevOps", "filter": ".filter-devops" }
         ],
-        "projects": [        
+        "projects": [
             {
-              "title": "Ledger Reconciliation AI API (TQI FinTech Edition)",
-              "category_class": "filter-product",
-              "description": "O desenvolvimento passo a passo de um microsserviço de **Conciliação Bancária e Liquidação de Missão Crítica** IA-Native utilizando **Java 21 (Virtual Threads)**, **Kotlin (Coroutines)**, **Arquitetura Hexagonal**, **Mensageria Híbrida (Kafka/SQS)** e tolerância a falhas.",
-              "img": "https://raw.githubusercontent.com/fabiuniz/ledger-reconciliation-api/main/images/screenshot.png",
-              "github_url": "https://github.com/fabiuniz/ledger-reconciliation-api"
-            },            
+                "title": "Ledger Reconciliation AI API (TQI FinTech Edition)",
+                "category_class": "filter-product",
+                "description": "Microsserviço de **Conciliação Bancária e Liquidação de Missão Crítica** IA-Native utilizando **Java 21 (Virtual Threads)**, **Kotlin (Coroutines)**, **Arquitetura Hexagonal**, **Mensageria Híbrida (Kafka/SQS)** e tolerância a falhas.",
+                "img": "https://raw.githubusercontent.com/fabiuniz/ledger-reconciliation-api/main/images/screenshot.png",
+                "github_url": "https://github.com/fabiuniz/ledger-reconciliation-api"
+            },
             {
                 "title": "Java AI & Engenharia de Prompt",
                 "category_class": "filter-branding",
@@ -146,37 +147,37 @@ var portifolio = {
             {
                 "title": "Card System API - Santander",
                 "category_class": "filter-branding",
-                "description": "ste projeto é um Microserviço focado no processamento de transações de cartões, desenvolvido como parte do processo seletivo para a posição de Analista de Sistemas III.",
+                "description": "Este projeto é um Microserviço focado no processamento de transações de cartões, desenvolvido como parte do processo seletivo para a posição de Analista de Sistemas III.",
                 "img": "https://raw.githubusercontent.com/fabiuniz/card-system-api/main/images/fluxo.png",
                 "github_url": "https://github.com/fabiuniz/card-system-api"
             },
             {
-              "title": "Análise de Dados Glicêmicos (PWA)",
-              "category_class": "filter-app",
-              "description": "Sistema moderno de saúde com análise de dados e visualização via Chart.js. Offline-first e integrado com Google Sheets API.",
-              "img": "https://raw.githubusercontent.com/fabiuniz/dextro/main/images/glicemia.png",
-              "github_url": "https://github.com/fabiuniz/dextro"
+                "title": "Análise de Dados Glicêmicos (PWA)",
+                "category_class": "filter-app",
+                "description": "Sistema moderno de saúde com análise de dados e visualização via Chart.js. Offline-first e integrado com Google Sheets API.",
+                "img": "https://raw.githubusercontent.com/fabiuniz/dextro/main/images/glicemia.png",
+                "github_url": "https://github.com/fabiuniz/dextro"
             },
             {
-              "title": "Agente AI: Java Spring + Gemini",
-              "category_class": "filter-branding",
-              "description": "Implementação nativa em Java para orquestração de Agentes de IA utilizando a API do Google Gemini. Inteligência Generativa aplicada ao Backend.",
-              "img": "https://raw.githubusercontent.com/fabiuniz/agente_ai/main/images/screenshot.png",
-              "github_url": "https://github.com/fabiuniz/agente_ai"
+                "title": "Agente AI: Java Spring + Gemini",
+                "category_class": "filter-branding",
+                "description": "Implementação nativa em Java para orquestração de Agentes de IA utilizando a API do Google Gemini. Inteligência Generativa aplicada ao Backend.",
+                "img": "https://raw.githubusercontent.com/fabiuniz/agente_ai/main/images/screenshot.png",
+                "github_url": "https://github.com/fabiuniz/agente_ai"
             },
             {
-              "title": "Catálogo de PNGs com Servidor Estático e Enriquecimento Gemini",
-              "category_class": "filter-devops",
-              "description": "Este projeto é uma solução completa para indexar imagens PNG de uma pasta de rede (SMB/CIFS) e exibi-las em uma galeria web estática com funcionalidade de busca",              
-              "img": "https://raw.githubusercontent.com/fabiuniz/catalog_node/main/catalog_node.png",
-              "github_url": "https://github.com/fabiuniz/catalog_node"
+                "title": "Catálogo de PNGs com Servidor Estático e Enriquecimento Gemini",
+                "category_class": "filter-devops",
+                "description": "Este projeto é uma solução completa para indexar imagens PNG de uma pasta de rede (SMB/CIFS) e exibi-las em uma galeria web estática com funcionalidade de busca",
+                "img": "https://raw.githubusercontent.com/fabiuniz/catalog_node/main/catalog_node.png",
+                "github_url": "https://github.com/fabiuniz/catalog_node"
             },
             {
-              "title": "Análise Preditiva de Turnover (ML)",
-              "category_class": "filter-app",
-              "description": "Modelo de Machine Learning em Python para prever a retenção de talentos. Une ciência de dados com inteligência de negócio corporativo.",
-              "img": "https://raw.githubusercontent.com/fabiuniz/turnover/main/static/banner.png",
-              "github_url": "https://github.com/fabiuniz/turnover"
+                "title": "Análise Preditiva de Turnover (ML)",
+                "category_class": "filter-app",
+                "description": "Modelo de Machine Learning em Python para prever a retenção de talentos. Une ciência de dados com inteligência de negócio corporativo.",
+                "img": "https://raw.githubusercontent.com/fabiuniz/turnover/main/static/banner.png",
+                "github_url": "https://github.com/fabiuniz/turnover"
             },
             {
                 "title": "Análise de Dados Python",
@@ -189,14 +190,13 @@ var portifolio = {
                 "title": "Gestão Escolar (FastAPI/React) containerizado.",
                 "category_class": "filter-devops",
                 "description": "O Sistema de Gestão Escolar é uma aplicação web moderna e completa para gerenciar alunos, cursos e matrículas em instituições de ensino.",
-                //"img": "assets/img/portfolio/app-1___.jpg",
                 "img": "https://raw.githubusercontent.com/fabiuniz/gestaoedu/main/images/gestaoedu.png",
                 "github_url": "https://github.com/fabiuniz/gestaoedu"
             },
             {
                 "title": "Aplicação Flask Dockerizada com CI/CD - Google Cloud Run & Heroku",
                 "category_class": "filter-devops",
-                "description": "Este projeto implementa uma aplicação web moderna em Flask com frontend estiloso, empacotada em Docker e com pipelines de CI/CD totalmente automatizados usando GitHub Actions para deploy.",
+                "description": "Este projeto implementa uma aplicação web moderna em Flask com frontend estiloso, empacotado em Docker e com pipelines de CI/CD totalmente automatizados usando GitHub Actions para deploy.",
                 //"img": "assets/img/portfolio/app-1__.jpg",
                 "img": "https://raw.githubusercontent.com/fabiuniz/cicd/main/images/appdockercicd.png",
                 "github_url": "https://github.com/fabiuniz/cicd"
