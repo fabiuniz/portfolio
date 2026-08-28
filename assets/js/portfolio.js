@@ -1,9 +1,9 @@
 var portifolio = {
     "profile": {
         "name": "Fabiano Rocha de Almeida",
-        "title": "Analista de Sistemas Sênior (Sistemas Críticos & Backend)",
+        "title": "Analista de Sistemas (Sistemas Críticos & Backend)",
         "hero_typed_items": [
-            "Analista de Sistemas Sênior",
+            "Analista de Sistemas",
             "Sistemas de Missão Crítica",
             "Java Spring Boot + Kotlin",
             "PHP & Arquitetura de Dados"
@@ -23,7 +23,7 @@ var portifolio = {
         ]
     },
     "vagas": [
-        "Analista de Sistemas Sênior",
+        "Analista de Sistemas",
         "Backend Specialist (Java + Kotlin/PHP)",
         "Tech Lead / Arquiteto de Soluções",
         "Cloud & Platform Engineer",
@@ -73,7 +73,7 @@ var portifolio = {
         ],
         "experience": [
             {
-                "role": "Analista de Sistemas Sênior / Backend Engineer",
+                "role": "Analista de Sistemas / Backend Engineer",
                 "company": "Em Transição de Carreira & Projetos Avançados",
                 "period": "Out/2024 - Present",
                 "cbo": "2124-05",
