@@ -14,7 +14,8 @@ var portifolio = {
         ],
         "email": "fabiuniz@msn.com",
         "linkedin": "https://www.linkedin.com/in/fabiano-rocha-de-almeida-dev",
-        "github": "https://github.com/fabiuniz"
+        "github": "https://github.com/fabiuniz",
+        "qrcode":"https://raw.githubusercontent.com/fabiuniz/portfolio/assets/img/qr-profile.png"
     },
     "about": {
         "description": [
