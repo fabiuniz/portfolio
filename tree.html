@@ -206,27 +206,27 @@
 
     <script>
         const quadro_figma = {
-            hook0:  [15, 90],// vazio
-            hook1:  [50, 90],// DadosIA --> analise de dados
-            hook2:  [38, 90],// DadosIA --> machine elairne
-            hook3:  [27, 90],// DadosIA --> automação
-            hook4:  [43, 83],// IoT      --> internet das coisas
-            hook5:  [37, 83],// IoT      --> Hardware e eletronica
-            hook6:  [70, 83],// DevOps   --> containers
-            hook7:  [74, 83],// Dev      --> backend
-            hook8:  [42, 83],// Dev      --> frontend
-            hook9:  [22, 83],// Fund     --> arquitetura de software
-            hook10: [28, 83], // Fund     -->linguagens
-            hook11: [25, 83], // Dev      -->Banco de dados
-            hook12: [31, 83], // Fund     -->logica e extrutura de dados
-            hook13: [30, 83], // Skils    -->skils
-            hook14: [25, 83], // Monolíto -->Monolíto
-            hook15: [25, 83], // Seguranca --> fund
-            hook16: [25, 83], // Dev      --> Mobile
-            hook17: [25, 83], // Skils    -->ingles
-            hook18: [22, 83], // DevOps   --> ci/cd"
-            hook19: [15, 83], // DevOps   --> nuvem
-            hook20: [15, 83]// DevOps   --> nuvem IaC
+            hook0:  [15, 90, 050],// vazio
+            hook1:  [50, 90, 300],// DadosIA --> analise de dados
+            hook2:  [38, 90, 290],// DadosIA --> machine elairne
+            hook3:  [27, 90, 090],// DadosIA --> automação
+            hook4:  [43, 83, 200],// IoT      --> internet das coisas
+            hook5:  [37, 83, 200],// IoT      --> Hardware e eletronica
+            hook6:  [70, 83, 250],// DevOps   --> containers
+            hook7:  [74, 83, 300],// Dev      --> backend
+            hook8:  [42, 83, 190],// Dev      --> frontend
+            hook9:  [22, 83, 280],// Fund     --> arquitetura de software
+            hook10: [28, 83, 090],// Fund     -->linguagens
+            hook11: [25, 83, 200],// Dev      -->Banco de dados
+            hook12: [31, 83, 250],// Fund     -->logica e extrutura de dados
+            hook13: [80, 83, 100],// Skils    -->skils
+            hook14: [25, 83, 280],// Monolíto -->Monolíto
+            hook15: [25, 83, 090],// Seguranca --> fund
+            hook16: [25, 83, 250],// Dev      --> Mobile
+            hook17: [25, 83, 090],// Skils    -->ingles
+            hook18: [22, 83, 280],// DevOps   --> ci/cd"
+            hook19: [15, 83, 090],// DevOps   --> nuvem
+            hook20: [15, 83, 280] // DevOps   --> nuvem IaC
         };
         // Use const para valores que não mudam
         const hookfigma = {
@@ -271,6 +271,8 @@
             { hook: "DadosIA", path: hookfigma.hook3, label: "🎯 Extraindo legenda do YouTube via cmd", url: github+"/youtube-transcript", description: "⭐ Extraindo legenda do YouTube usando Python", technical_requirement: ""},
             { hook: "Dev", path: hookfigma.hook11, label: "💳 Card System Platform - Santander/F1RST Evolution", url: github+"/card-system-api", description: "⭐ Microserviço focado no processamento de transações de cartões", technical_requirement: "Java 11, Spring Boot 2.7, Spring Data JPA, Hibernate, MySQL, Docker, Maven, JUnit 5, Hexagonal Architecture, SOLID, Clean Architecture, REST API, Global Exception Handling, Bean Validation, Bash Scripting, Linux (Debian), Git, GitFlow, Amazon Corretto, Multi-stage builds, CI/CD, GitHub Actions, SRE, Troubleshooting, Cloud Computing." },
             { hook: "Dev", path: hookfigma.hook11, label: "📦 PostgreSQL, JPA e API RESTful em Java Spring.", url: github+"/gmcatalog-rest", description: "⭐ Projeto GmList com PostgreSQL, JPA e API RESTful em Java Spring.", technical_requirement: ""},
+            { hook: "Dev", path: hookfigma.hook7, label: "🚀 Ledger Reconciliation AI API: Sistema de Conciliação Bancária IA-Native", url: github+"/ledger-reconciliation-api", description: "🌍 Público - Projeto de microsserviço de missão crítica para conciliação contábil e liquidação financeira automatizada, integrando engenharia de alta performance e inteligência artificial preditiva.", technical_requirement: "Lógica de Programação, Estrutura de Dados, Sistemas Distribuídos, Mensageria Assíncrona, Resiliência de Software, Computação em Nuvem."},
+            { hook: "Dev", path: hookfigma.hook7, label: "💰 Budget AI API: Gerenciamento Financeiro Inteligente com IA Multimodal e Arquitetura Hexagonal", url: github+"/budget-ai-api", description: "🌟 Privado - API baseada em Arquitetura Hexagonal estrita e Java 17 para automação de transações financeiras pessoais via comandos de voz, integrada nativamente ao Google AI Studio (Gemini) e persistência em PostgreSQL estruturada via Docker.", technical_requirement: "Java 17, Spring Boot 3.2.5, PostgreSQL, Docker, Docker Compose, Arquitetura Hexagonal (Ports & Adapters), Stream API, REST Client (RestTemplate), Multipart Files, Google AI Studio (Gemini API), Linux Terminal, Dotenv, Maven."},
             { hook: "Dev", path: hookfigma.hook8, label: "💳 Card System Platform - Santander/F1RST Evolution", url: github+"/card-system-api", description: "⭐ Microserviço focado no processamento de transações de cartões", technical_requirement: "Java 11, Spring Boot 2.7, Spring Data JPA, Hibernate, MySQL, Docker, Maven, JUnit 5, Hexagonal Architecture, SOLID, Clean Architecture, REST API, Global Exception Handling, Bean Validation, Bash Scripting, Linux (Debian), Git, GitFlow, Amazon Corretto, Multi-stage builds, CI/CD, GitHub Actions, SRE, Troubleshooting, Cloud Computing." },
             { hook: "Dev", path: hookfigma.hook7, label: "📦 PostgreSQL, JPA e API RESTful em Java Spring.", url: github+"/gmcatalog-rest", description: "⭐ Projeto GmList com PostgreSQL, JPA e API RESTful em Java Spring.", technical_requirement: ""},
             { hook: "Dev", path: hookfigma.hook16, label: "💳 Card System Platform - Santander/F1RST Evolution", url: github+"/card-system-api", description: "⭐ Microserviço focado no processamento de transações de cartões", technical_requirement: "Java 11, Spring Boot 2.7, Spring Data JPA, Hibernate, MySQL, Docker, Maven, JUnit 5, Hexagonal Architecture, SOLID, Clean Architecture, REST API, Global Exception Handling, Bean Validation, Bash Scripting, Linux (Debian), Git, GitFlow, Amazon Corretto, Multi-stage builds, CI/CD, GitHub Actions, SRE, Troubleshooting, Cloud Computing." },
@@ -305,13 +307,11 @@
             { hook: "Skils", path: hookfigma.hook13, label: "💼 Portfólio geral.", url: github+"/fabiuniz", description: "⭐ Portfólio.", technical_requirement: ""},
             { hook: "Skils", path: hookfigma.hook17, label: "🗣️ Pratice Vocabulary", url: github+"/tofluence", description: "⭐ Pratice Vocabulary - Ferramenta de Potencialização de Vocabulário Inglês", technical_requirement: ""},
             { hook: "Fund", path: hookfigma.hook9, label: "💰 Budget AI API: Gerenciamento Financeiro Inteligente com IA Multimodal e Arquitetura Hexagonal", url: github+"/budget-ai-api", description: "🌟 Privado - API baseada em Arquitetura Hexagonal estrita e Java 17 para automação de transações financeiras pessoais via comandos de voz, integrada nativamente ao Google AI Studio (Gemini) e persistência em PostgreSQL estruturada via Docker.", technical_requirement: "Java 17, Spring Boot 3.2.5, PostgreSQL, Docker, Docker Compose, Arquitetura Hexagonal (Ports & Adapters), Stream API, REST Client (RestTemplate), Multipart Files, Google AI Studio (Gemini API), Linux Terminal, Dotenv, Maven."},
-            { hook: "Dev", path: hookfigma.hook7, label: "💰 Budget AI API: Gerenciamento Financeiro Inteligente com IA Multimodal e Arquitetura Hexagonal", url: github+"/budget-ai-api", description: "🌟 Privado - API baseada em Arquitetura Hexagonal estrita e Java 17 para automação de transações financeiras pessoais via comandos de voz, integrada nativamente ao Google AI Studio (Gemini) e persistência em PostgreSQL estruturada via Docker.", technical_requirement: "Java 17, Spring Boot 3.2.5, PostgreSQL, Docker, Docker Compose, Arquitetura Hexagonal (Ports & Adapters), Stream API, REST Client (RestTemplate), Multipart Files, Google AI Studio (Gemini API), Linux Terminal, Dotenv, Maven."},
             { hook: "Skils", path: hookfigma.hook13, label: "💰 Budget AI API: Gerenciamento Financeiro Inteligente com IA Multimodal e Arquitetura Hexagonal", url: github+"/budget-ai-api", description: "🌟 Privado - API baseada em Arquitetura Hexagonal estrita e Java 17 para automação de transações financeiras pessoais via comandos de voz, integrada nativamente ao Google AI Studio (Gemini) e persistência em PostgreSQL estruturada via Docker.", technical_requirement: "Java 17, Spring Boot 3.2.5, PostgreSQL, Docker, Docker Compose, Arquitetura Hexagonal (Ports & Adapters), Stream API, REST Client (RestTemplate), Multipart Files, Google AI Studio (Gemini API), Linux Terminal, Dotenv, Maven."},
             { hook: "Skils", path: hookfigma.hook13, label: "💳 Card System Platform - Santander/F1RST Evolution", url: github+"/card-system-api", description: "⭐ Microserviço focado no processamento de transações de cartões", technical_requirement: "Java 11, Spring Boot 2.7, Spring Data JPA, Hibernate, MySQL, Docker, Maven, JUnit 5, Hexagonal Architecture, SOLID, Clean Architecture, REST API, Global Exception Handling, Bean Validation, Bash Scripting, Linux (Debian), Git, GitFlow, Amazon Corretto, Multi-stage builds, CI/CD, GitHub Actions, SRE, Troubleshooting, Cloud Computing." },
             { hook: "DevOps", path: hookfigma.hook6, label: "💰 Budget AI API: Gerenciamento Financeiro Inteligente com IA Multimodal e Arquitetura Hexagonal", url: github+"/budget-ai-api", description: "🌟 Privado - API baseada em Arquitetura Hexagonal estrita e Java 17 para automação de transações financeiras pessoais via comandos de voz, integrada nativamente ao Google AI Studio (Gemini) e persistência em PostgreSQL estruturada via Docker.", technical_requirement: "Java 17, Spring Boot 3.2.5, PostgreSQL, Docker, Docker Compose, Arquitetura Hexagonal (Ports & Adapters), Stream API, REST Client (RestTemplate), Multipart Files, Google AI Studio (Gemini API), Linux Terminal, Dotenv, Maven."},
             { hook: "DadosIA", path: hookfigma.hook1, label: "💰 Budget AI API: Gerenciamento Financeiro Inteligente com IA Multimodal e Arquitetura Hexagonal", url: github+"/budget-ai-api", description: "🌟 Privado - API baseada em Arquitetura Hexagonal estrita e Java 17 para automação de transações financeiras pessoais via comandos de voz, integrada nativamente ao Google AI Studio (Gemini) e persistência em PostgreSQL estruturada via Docker.", technical_requirement: "Java 17, Spring Boot 3.2.5, PostgreSQL, Docker, Docker Compose, Arquitetura Hexagonal (Ports & Adapters), Stream API, REST Client (RestTemplate), Multipart Files, Google AI Studio (Gemini API), Linux Terminal, Dotenv, Maven." },
             { hook: "Fund", path: hookfigma.hook9, label: "🚀 Ledger Reconciliation AI API: Sistema de Conciliação Bancária IA-Native", url: github+"/ledger-reconciliation-api", description: "🌍 Público - Projeto de microsserviço de missão crítica para conciliação contábil e liquidação financeira automatizada, integrando engenharia de alta performance e inteligência artificial preditiva.", technical_requirement: "Lógica de Programação, Estrutura de Dados, Sistemas Distribuídos, Mensageria Assíncrona, Resiliência de Software, Computação em Nuvem."},
-            { hook: "Dev", path: hookfigma.hook7, label: "🚀 Ledger Reconciliation AI API: Sistema de Conciliação Bancária IA-Native", url: github+"/ledger-reconciliation-api", description: "🌍 Público - Projeto de microsserviço de missão crítica para conciliação contábil e liquidação financeira automatizada, integrando engenharia de alta performance e inteligência artificial preditiva.", technical_requirement: "Lógica de Programação, Estrutura de Dados, Sistemas Distribuídos, Mensageria Assíncrona, Resiliência de Software, Computação em Nuvem."},
             { hook: "DevOps", path: hookfigma.hook18, label: "🚀 Ledger Reconciliation AI API: Sistema de Conciliação Bancária IA-Native", url: github+"/ledger-reconciliation-api", description: "🌍 Público - Projeto de microsserviço de missão crítica para conciliação contábil e liquidação financeira automatizada, integrando engenharia de alta performance e inteligência artificial preditiva.", technical_requirement: "Lógica de Programação, Estrutura de Dados, Sistemas Distribuídos, Mensageria Assíncrona, Resiliência de Software, Computação em Nuvem." }
         ];
 
@@ -349,7 +349,6 @@
             `;
             svgDoc.documentElement.prepend(style); // Usar prepend para garantir que o estilo seja o primeiro elemento
         }
-
         /**
          * Adiciona um ForeignObject (com span de link) abaixo de cada elemento SVG interativo.
          * @param {Document} svgDoc O documento SVG.
@@ -358,33 +357,21 @@
         function addLinksToSvgElements(svgDoc, linksToAssign) {
             // Map para armazenar o container de cada elemento (evita duplicar o foreignObject)
             const containerMap = new Map();
-            
-            const FO_WIDTH = 400;
-            const MAX_HEIGHT = 300; // Altura máxima antes de aparecer a barra de rolagem
             const INDENTATION = 10;
             const VERTICAL_SPACING = 5;
-
             linksToAssign.forEach(link => {
-                const targetElement = svgDoc.getElementById(link.path);
+                let targetElement = svgDoc.getElementById(link.path);
                 if (!targetElement) {
                     console.warn(`Elemento com ID "${link.path}" não encontrado.`);
                     return;
                 }
-                let divContainer = containerMap.get(targetElement.id);
-
+                let FO_WIDTH = 400;
                 // Se é o primeiro link deste elemento, cria o ForeignObject e a Div
+                let divContainer = containerMap.get(targetElement.id);
                 if (!divContainer) {
                     const bbox = targetElement.getBBox();
                     const x = bbox.x + INDENTATION;
                     const y = bbox.y + bbox.height + VERTICAL_SPACING;
-
-                    const foreignObject = svgDoc.createElementNS("http://www.w3.org/2000/svg", "foreignObject");
-                    foreignObject.setAttribute('x', x);
-                    foreignObject.setAttribute('y', y);
-                    foreignObject.setAttribute('width', FO_WIDTH);
-                    foreignObject.setAttribute('height', MAX_HEIGHT); // Altura fixa do frame
-                    foreignObject.setAttribute('vector-effect', 'non-scaling-stroke');                    
-
                     let largura = "85%"; 
                     let altura =  "70%";
                     const hookKey = Object.keys(hookfigma).find(key => hookfigma[key] === link.path);
@@ -393,9 +380,13 @@
                         largura = quadro_figma[hookKey][1]+"%"; 
                         console.warn(quadro_figma[hookKey][0]);
                     }
-
-
-
+                    let MAX_HEIGHT = quadro_figma[hookKey][2] ;//300; // Altura máxima antes de aparecer a barra de rolagem
+                    const foreignObject = svgDoc.createElementNS("http://www.w3.org/2000/svg", "foreignObject");
+                    foreignObject.setAttribute('x', x);
+                    foreignObject.setAttribute('y', y);
+                    foreignObject.setAttribute('width', FO_WIDTH);
+                    foreignObject.setAttribute('height', MAX_HEIGHT); // Altura fixa do frame
+                    foreignObject.setAttribute('vector-effect', 'non-scaling-stroke');                    
                     divContainer = svgDoc.createElementNS("http://www.w3.org/1999/xhtml", "div");
                     divContainer.style.cssText = `
                         width: ${largura};
@@ -410,12 +401,10 @@
                         font-size: 14px; /* <--- DEFINA UM TAMANHO FIXO AQUI */
                         box-sizing: border-box;
                     `;
-
                     foreignObject.appendChild(divContainer);
                     svgDoc.documentElement.appendChild(foreignObject);
                     containerMap.set(targetElement.id, divContainer);
                 }
-
                 // Cria o link (span) e adiciona ao container existente
                 const span = svgDoc.createElementNS("http://www.w3.org/1999/xhtml", "span");
                 span.textContent = link.label;
@@ -430,9 +419,7 @@
                     white-space: nowrap;
                 `;
                 span.addEventListener('click', () => window.open(link.url, '_blank'));
-
                 divContainer.appendChild(span);
-
                 // Lógica de hover no elemento original (mantida)
                 if (!targetElement.classList.contains('interactive-node')) {
                     targetElement.classList.add('interactive-node');
