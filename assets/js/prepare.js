@@ -205,4 +205,5 @@ document.addEventListener('DOMContentLoaded', () => {
     setLinkOrHide('footer-email_lnk', portifolio.profile.email, "mailto:");
     setLinkOrHide('footer-github_lnk', portifolio.profile.github);
     setLinkOrHide('footer-linkedin_lnk', portifolio.profile.linkedin);
+    setLinkOrHide('contact-qrcode', portifolio.profile.qrcode);    
 });
