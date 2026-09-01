@@ -226,7 +226,9 @@
             hook17: [25, 83, 090],// Skils    -->ingles
             hook18: [22, 83, 280],// DevOps   --> ci/cd"
             hook19: [15, 83, 090],// DevOps   --> nuvem
-            hook20: [15, 83, 280] // DevOps   --> nuvem IaC
+            hook20: [15, 83, 280], // DevOps   --> nuvem IaC
+            hook21: [00, 00, 000], // DevOps   --> SRE
+            hook22: [00, 00, 000] // Eletronic--> Maker
         };
         // Use const para valores que não mudam
         const hookfigma = {
@@ -240,19 +242,19 @@
             hook7: "path_M600229172577V171413H604297C6051081714136057771714", // Dev      --> backend
             hook8: "path_M60022915502V153857H607206V153982H601638V154375H60", // Dev      --> frontend
             hook9: "path_M351198100091H336425L379152989271H393698L436425100", // Fund     --> arquitetura de software
-            hook10: "path_M346425865462V853826H360516V864212H414607V865462H3", // Fund     -->linguagens
-            hook11: "path_M203122154457V153293H20719C20800115329320867153307", // Dev      -->Banco de dados
-            hook12: "path_M346425112476V111313H360516V112351H414607V112476H3", // Fund     -->logica e extrutura de dados
-            hook13: "path_M114928664182C114859663606114583663159114098662841", // Skils    -->skils
-            hook14: "path_M203122165293H204804L208759166259H208895L212849165", // Monolíto -->Monolíto
-            hook15: "path_M115813424099H885978C87893342409987322143261187322", // Seguranca --> fund
-            hook16: "path_M203122177093H204804L208759178059H208895L212849177", // Dev      --> Mobile
-            hook17: "path_M109973547194V55883H108564V547194H109973ZM11395755", // Skils    -->ingles
-            hook18: "path_M112855141449H112715C11270614140911269214137311267", // DevOps   --> ci/cd"
-            hook19: "path_M112855162127H112715C11270616208611269216205111267", // DevOps   --> nuvem
-            hook20: "path_M11206152425V153588H111919V152425H11206ZM112458153", // DevOps   --> nuvem IaC
-            hook21: "path_M112555171392C11254917133511252117129112473171258C",  // DevOps   --> SRE
-            hook22: "path_M112564171433C112557171376112529171331112481171299" //  Eletronic--> Maker
+            hook10: "path_M346425865462V853826H360516V864212H414607V865462H3",// Fund     -->linguagens
+            hook11: "path_M203122154457V153293H20719C20800115329320867153307",// Dev      -->Banco de dados
+            hook12: "path_M346425112476V111313H360516V112351H414607V112476H3",// Fund     -->logica e extrutura de dados
+            hook13: "path_M114928664182C114859663606114583663159114098662841",// Skils    -->skils
+            hook14: "path_M203122165293H204804L208759166259H208895L212849165",// Monolíto -->Monolíto
+            hook15: "path_M115813424099H885978C87893342409987322143261187322",// Seguranca --> fund
+            hook16: "path_M203122177093H204804L208759178059H208895L212849177",// Dev      --> Mobile
+            hook17: "path_M109973547194V55883H108564V547194H109973ZM11395755",// Skils    -->ingles
+            hook18: "path_M112855141449H112715C11270614140911269214137311267",// DevOps   --> ci/cd"
+            hook19: "path_M112855162127H112715C11270616208611269216205111267",// DevOps   --> nuvem
+            hook20: "path_M11206152425V153588H111919V152425H11206ZM112458153",// DevOps   --> nuvem IaC
+            hook21: "path_00000000000000000000000000000000000000000000000000",// DevOps   --> SRE
+            hook22: "path_00000000000000000000000000000000000000000000000000" // Eletronic--> Maker
         };
         const github = "https://github.com/fabiuniz";
 
@@ -378,7 +380,7 @@
                     if (hookKey){
                         altura =  quadro_figma[hookKey][0]+"%";
                         largura = quadro_figma[hookKey][1]+"%"; 
-                        console.warn(quadro_figma[hookKey][0]);
+                        //console.warn(quadro_figma[hookKey][0]);
                     }
                     let MAX_HEIGHT = quadro_figma[hookKey][2] ;//300; // Altura máxima antes de aparecer a barra de rolagem
                     const foreignObject = svgDoc.createElementNS("http://www.w3.org/2000/svg", "foreignObject");
