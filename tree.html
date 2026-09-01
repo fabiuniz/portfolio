@@ -324,32 +324,34 @@
         function addSvgStyles(svgDoc) {
             const style = svgDoc.createElementNS("http://www.w3.org/2000/svg", "style");
             style.textContent = `
+                /* Importa a fonte diretamente para dentro do documento SVG */
+                @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
                 .interactive-node {
                     cursor: pointer;
-                }
-                .clickable-overlay {
-                    cursor: pointer;
-                }
-                text {
-                    user-select: none;
-                    pointer-events: none;
                 }
                 .link-span {
                     cursor: pointer;
                     display: block;
                     font-size: 14px;
                     color: var(--link-color);
-                    font-family: 'Roboto Light', 'Roboto', sans-serif;
+                    /* Garante a aplicação da fonte e melhora a nitidez (anti-aliasing) */
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 300;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                    text-rendering: optimizeLegibility;
+                    
                     white-space: nowrap;
-                    overflow: hidden; /* Adicionado para lidar com texto que excede a largura */
-                    text-overflow: ellipsis; /* Adicionado para truncar o texto com reticências */
-                    max-width: 100%; /* Garante que o texto não exceda o foreignObject */
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    max-width: 100%;
                 }
                 .link-span:hover {
                     color: var(--link-hover-color);
                 }
             `;
-            svgDoc.documentElement.prepend(style); // Usar prepend para garantir que o estilo seja o primeiro elemento
+            svgDoc.documentElement.prepend(style);
         }
         /**
          * Adiciona um ForeignObject (com span de link) abaixo de cada elemento SVG interativo.
