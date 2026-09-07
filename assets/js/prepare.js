@@ -40,6 +40,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const contactGithub = document.getElementById('contact-github');
     if (contactGithub) contactGithub.innerText = portifolio.profile.github ? portifolio.profile.github.replace("https://","") : "Não informado";
+
+    const contactcredly = document.getElementById('contact-credly');
+    if (contactcredly) contactcredly.innerText = portifolio.profile.credly;
     
     // Links de Contato (Esconde se não houver no JSON)
     const setLinkOrHide = (elementId, url, prefix = "") => {
@@ -205,6 +208,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setLinkOrHide('footer-email_lnk', portifolio.profile.email, "mailto:");
     setLinkOrHide('footer-github_lnk', portifolio.profile.github);
     setLinkOrHide('footer-linkedin_lnk', portifolio.profile.linkedin);
+    setLinkOrHide('contact-credly_lnk', portifolio.profile.credly);
     const contactQrCode = document.getElementById('contact-qrcode');
     if (contactQrCode && portifolio.profile.qrcode) {
         contactQrCode.src = portifolio.profile.qrcode;
