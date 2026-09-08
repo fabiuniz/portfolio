@@ -13,6 +13,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const profileName = document.getElementById('profile-name');
     if (profileName) profileName.innerText = portifolio.profile.name;
 
+    // Configuração Dinâmica do Botão de Download do Currículo com o Nome
+    const btnPdf = document.getElementById('btn-download-pdf');
+    if (btnPdf && portifolio.profile.name) {
+        const nomeFormatado = portifolio.profile.name.trim().replace(/\s+/g, '_');
+        btnPdf.setAttribute('download', `Curriculo_${nomeFormatado}.pdf`);
+    }
+
     // Configuração Dinâmica do Typed.js
     const typedElement = document.getElementById('typed-element');
     if (typedElement && portifolio.profile.hero_typed_items) {

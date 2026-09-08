@@ -120,7 +120,7 @@ var portifolio = {
         ],
         "idiomas": [
             { "nome": "Inglês (Limited Working)", "exibir": true },
-            { "nome": "Inglês médio (CEFR B1-B2) - Score 103 Duolingo (ago/2026)", "exibir": true }
+            { "nome": "Inglês médio (CEFR B1-B2) - Score 105 Duolingo (set/2026)", "exibir": true }
         ]
     },
     "portfolio": {
@@ -198,9 +198,8 @@ var portifolio = {
             {
                 "title": "Aplicação Flask Dockerizada com CI/CD - Google Cloud Run & Heroku",
                 "category_class": "filter-devops",
-                "description": "Este projeto implementa uma aplicação web moderna em Flask com frontend estiloso, empacotado em Docker e com pipelines de CI/CD totalmente automatizados usando GitHub Actions para deploy.",
-                //"img": "assets/img/portfolio/app-1__.jpg",
-                "img": "https://raw.githubusercontent.com/fabiuniz/cicd/main/images/appdockercicd.png",
+                "description": "Este projeto implementa uma aplicação web moderna em Flask com frontend estiloso, empacotado em Docker e com pipelines de CI/CD totalmente automatizados usando GitHub Actions para deploy.",                
+                "img": "https://raw.githubusercontent.com/fabiuniz/cicd/main/images/appdockercicd.png", 
                 "github_url": "https://github.com/fabiuniz/cicd"
             },
             {
