@@ -229,6 +229,13 @@ var portifolio = {
                 "description": "O gmcatalog é uma aplicação backend desenvolvida com Java e o framework Spring Boot. Seu objetivo principal é gerenciar listas de jogos, permitindo a criação de listas personalizadas e a organização de jogos dentro dessas listas. A aplicação segue a arquitetura de uma API RESTful, possibilitando a interação com os dados por meio de requisições HTTP.",
                 "img": "https://raw.githubusercontent.com/fabiuniz/gmcatalog-rest/main/images/gmcatalog.png",
                 "github_url": "https://github.com/fabiuniz/gmcatalog-rest"
+            },
+            {
+                "title": "Treinamento DATAPREV",
+                "category_class": "filter-product",
+                "description": "Programa de treinamento DATAPREV 2026: Implantação e Governança de Software Público",
+                "img": "https://raw.githubusercontent.com/fabiuniz/dataprev/main/images/screenshot.jpg",
+                "github_url": "https://github.com/fabiuniz/dataprev"
             }
         ]
     }
