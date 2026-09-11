@@ -234,7 +234,7 @@ var portifolio = {
                 "title": "Treinamento DATAPREV",
                 "category_class": "filter-product",
                 "description": "Programa de treinamento DATAPREV 2026: Implantação e Governança de Software Público",
-                "img": "https://raw.githubusercontent.com/fabiuniz/dataprev/main/images/screenshot.jpg",
+                "img": "https://raw.githubusercontent.com/fabiuniz/dataprev/main/images/screenshot.png",
                 "github_url": "https://github.com/fabiuniz/dataprev"
             }
         ]
