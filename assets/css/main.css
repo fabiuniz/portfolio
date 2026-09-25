@@ -1093,6 +1093,16 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
+#portfolio-filters-container {
+  position: relative;
+  z-index: 9999; /* Joga o menu para a camada superior */
+}
+
+#portfolio-filters-container li {
+  cursor: pointer; /* Garante que o cursor mude para a mãozinha ao passar por cima */
+  pointer-events: auto; /* Assegura que o elemento capture o evento do mouse */
+}
+
 .faq .faq-container .faq-item {
   background-color: var(--surface-color);
   position: relative;

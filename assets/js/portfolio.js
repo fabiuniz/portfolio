@@ -140,18 +140,18 @@ var portifolio = {
                 "github_url": "https://github.com/fabiuniz/ledger-reconciliation-api"
             },
             {
-                "title": "Java AI & Engenharia de Prompt",
-                "category_class": "filter-branding",
-                "description": "O budget-ai-api é um microsserviço em Java 21 e Kotlin que usa Arquitetura Hexagonal e AWS SQS para converter áudios de transações financeiras em insights analíticos via IA do Google Gemini.",
-                "img": "https://raw.githubusercontent.com/fabiuniz/budget-ai-api/main/images/screenshot.png",
-                "github_url": "https://github.com/fabiuniz/budget-ai-api"
-            },
-            {
                 "title": "Card System API - Santander",
                 "category_class": "filter-branding",
                 "description": "Este projeto é um Microserviço focado no processamento de transações de cartões, desenvolvido como parte do processo seletivo para a posição de Analista de Sistemas III.",
                 "img": "https://raw.githubusercontent.com/fabiuniz/card-system-api/main/images/fluxo.png",
                 "github_url": "https://github.com/fabiuniz/card-system-api"
+            },
+            {
+                "title": "Java AI & Engenharia de Prompt",
+                "category_class": "filter-branding",
+                "description": "O budget-ai-api é um microsserviço em Java 21 e Kotlin que usa Arquitetura Hexagonal e AWS SQS para converter áudios de transações financeiras em insights analíticos via IA do Google Gemini.",
+                "img": "https://raw.githubusercontent.com/fabiuniz/budget-ai-api/main/images/screenshot.png",
+                "github_url": "https://github.com/fabiuniz/budget-ai-api"
             },
             {
                 "title": "Análise de Dados Glicêmicos (PWA)",
