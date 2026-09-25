@@ -184,7 +184,7 @@ var portifolio = {
             {
                 "title": "Análise de Dados Python",
                 "category_class": "filter-app",
-                "description": "Limpeza e análise de dados com Pandas/NumPy.",
+                "description": "Limpeza e análise de dados com Pandas/NumPy.Um sistema completo de análise de dados financeiros pessoais que transforma dados brutos de transações em insights acionáveis para gestão inteligente do orçamento familiar.",
                 "img": "https://raw.githubusercontent.com/fabiuniz/fato-dimessao/main/images/screenshot.png",
                 "github_url": "https://github.com/fabiuniz/fato-dimessao"
             },
@@ -205,16 +205,16 @@ var portifolio = {
             {
                 "title": "Preço Casa Predictor - Quanto Vale Seu Imóvel",
                 "category_class": "filter-app",
-                "description": "Este projeto demonstra uma arquitetura de microserviços simples, construída com Java 21 e Spring Boot 3.2.5. O objetivo é ilustrar a comunicação entre serviços.",
-                "img": "https://raw.githubusercontent.com/fabiuniz/fato-dimessao/main/images/screenshot.png",
-                "github_url": "https://github.com/fabiuniz/microservices-java"
+                "description": "Este repositório contém dois projetos Java que demonstram o uso de Inteligência Artificial e Machine Learning por meio das bibliotecas Deeplearning4j e ND4J.",
+                "img": "https://raw.githubusercontent.com/fabiuniz/dados_java_ia/main/images/screenshot.png",
+                "github_url": "https://github.com/fabiuniz/dados_java_ia"
             },
             {
                 "title": "Microserviços Java",
                 "category_class": "filter-product",
-                "description": "Java com Dados e IA",
-                "img": "https://raw.githubusercontent.com/fabiuniz/dados_java_ia/main/images/screenshot.png",
-                "github_url": "https://github.com/fabiuniz/dados_java_ia"
+                "description": "Este projeto demonstra uma arquitetura de microserviços simples, construída com Java 21 e Spring Boot 3.2.5. O objetivo é ilustrar a comunicação entre três serviços independentes",
+                "img": "https://raw.githubusercontent.com/fabiuniz/microservices-java/main/images/screenshot.png",
+                "github_url": "https://github.com/fabiuniz/microservices-java"
             },
             {
                 "title": "Microserviços Java - BTB Analytics Pipeline - Pharma Sector",
@@ -233,7 +233,7 @@ var portifolio = {
             {
                 "title": "Treinamento DATAPREV",
                 "category_class": "filter-product",
-                "description": "Programa de treinamento DATAPREV 2026: Implantação e Governança de Software Público",
+                "description": "Programa de treinamento DATAPREV 2026: Implantação e Governança de Software Público. Este repositório foi estruturado de forma híbrida e evolutiva com o objetivo de servir como laboratório prático focado 100% no edital do concurso Dataprev",
                 "img": "https://raw.githubusercontent.com/fabiuniz/dataprev/main/images/screenshot.png",
                 "github_url": "https://github.com/fabiuniz/dataprev"
             }
