@@ -133,11 +133,25 @@ var portifolio = {
         ],
         "projects": [
             {
+                "title": "Java AI & Engenharia de Prompt",
+                "category_class": "filter-branding",
+                "description": "O budget-ai-api é um microsserviço em Java 21 e Kotlin que usa Arquitetura Hexagonal e AWS SQS para converter áudios de transações financeiras em insights analíticos via IA do Google Gemini.",
+                "img": "https://raw.githubusercontent.com/fabiuniz/budget-ai-api/main/images/screenshot.png",
+                "github_url": "https://github.com/fabiuniz/budget-ai-api"
+            },
+            {
                 "title": "Ledger Reconciliation AI API (TQI FinTech Edition)",
                 "category_class": "filter-product",
                 "description": "Microsserviço de **Conciliação Bancária e Liquidação de Missão Crítica** IA-Native utilizando **Java 21 (Virtual Threads)**, **Kotlin (Coroutines)**, **Arquitetura Hexagonal**, **Mensageria Híbrida (Kafka/SQS)** e tolerância a falhas.",
                 "img": "https://raw.githubusercontent.com/fabiuniz/ledger-reconciliation-api/main/images/screenshot.png",
                 "github_url": "https://github.com/fabiuniz/ledger-reconciliation-api"
+            },
+            {
+                "title": "Agente AI: Java Spring + Gemini",
+                "category_class": "filter-branding",
+                "description": "Implementação nativa em Java para orquestração de Agentes de IA utilizando a API do Google Gemini. Inteligência Generativa aplicada ao Backend.",
+                "img": "https://raw.githubusercontent.com/fabiuniz/agente_ai/main/images/screenshot.png",
+                "github_url": "https://github.com/fabiuniz/agente_ai"
             },
             {
                 "title": "Card System API - Santander",
@@ -147,25 +161,11 @@ var portifolio = {
                 "github_url": "https://github.com/fabiuniz/card-system-api"
             },
             {
-                "title": "Java AI & Engenharia de Prompt",
-                "category_class": "filter-branding",
-                "description": "O budget-ai-api é um microsserviço em Java 21 e Kotlin que usa Arquitetura Hexagonal e AWS SQS para converter áudios de transações financeiras em insights analíticos via IA do Google Gemini.",
-                "img": "https://raw.githubusercontent.com/fabiuniz/budget-ai-api/main/images/screenshot.png",
-                "github_url": "https://github.com/fabiuniz/budget-ai-api"
-            },
-            {
                 "title": "Análise de Dados Glicêmicos (PWA)",
                 "category_class": "filter-app",
                 "description": "Sistema moderno de saúde com análise de dados e visualização via Chart.js. Offline-first e integrado com Google Sheets API.",
                 "img": "https://raw.githubusercontent.com/fabiuniz/dextro/main/images/glicemia.png",
                 "github_url": "https://github.com/fabiuniz/dextro"
-            },
-            {
-                "title": "Agente AI: Java Spring + Gemini",
-                "category_class": "filter-branding",
-                "description": "Implementação nativa em Java para orquestração de Agentes de IA utilizando a API do Google Gemini. Inteligência Generativa aplicada ao Backend.",
-                "img": "https://raw.githubusercontent.com/fabiuniz/agente_ai/main/images/screenshot.png",
-                "github_url": "https://github.com/fabiuniz/agente_ai"
             },
             {
                 "title": "Catálogo de PNGs com Servidor Estático e Enriquecimento Gemini",
