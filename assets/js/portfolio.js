@@ -133,13 +133,6 @@ var portifolio = {
         ],
         "projects": [        
             {
-                "title": "PCB Mapper & Engenharia de Prompt",
-                "category_class": "filter-branding",
-                "description": "O PCB Mapper é uma solução especializada projetada para servir como base de dados e interface para uma Inteligência Artificial diagnosticar e reparar circuitos eletrônicos.",
-                "img": "https://raw.githubusercontent.com/fabiuniz/pcb_mapper/main/images/screenshot.png",
-                "github_url": "https://github.com/fabiuniz/pcb_mapper"
-            },
-            {
                 "title": "Java AI & Engenharia de Prompt",
                 "category_class": "filter-branding",
                 "description": "O budget-ai-api é um microsserviço em Java 21 e Kotlin que usa Arquitetura Hexagonal e AWS SQS para converter áudios de transações financeiras em insights analíticos via IA do Google Gemini.",
@@ -148,7 +141,7 @@ var portifolio = {
             },
             {
                 "title": "Ledger Reconciliation AI API (TQI FinTech Edition)",
-                "category_class": "filter-product",
+                "category_class": "filter-devops",
                 "description": "Microsserviço de **Conciliação Bancária e Liquidação de Missão Crítica** IA-Native utilizando **Java 21 (Virtual Threads)**, **Kotlin (Coroutines)**, **Arquitetura Hexagonal**, **Mensageria Híbrida (Kafka/SQS)** e tolerância a falhas.",
                 "img": "https://raw.githubusercontent.com/fabiuniz/ledger-reconciliation-api/main/images/screenshot.png",
                 "github_url": "https://github.com/fabiuniz/ledger-reconciliation-api"
@@ -162,7 +155,7 @@ var portifolio = {
             },
             {
                 "title": "Card System API - Santander",
-                "category_class": "filter-branding",
+                "category_class": "filter-devops",
                 "description": "Este projeto é um Microserviço focado no processamento de transações de cartões, desenvolvido como parte do processo seletivo para a posição de Analista de Sistemas III.",
                 "img": "https://raw.githubusercontent.com/fabiuniz/card-system-api/main/images/fluxo.png",
                 "github_url": "https://github.com/fabiuniz/card-system-api"
@@ -175,11 +168,39 @@ var portifolio = {
                 "github_url": "https://github.com/fabiuniz/dextro"
             },
             {
-                "title": "Catálogo de PNGs com Servidor Estático e Enriquecimento Gemini",
+                "title": "Treinamento DATAPREV",
                 "category_class": "filter-devops",
+                "description": "Programa de treinamento DATAPREV 2026: Implantação e Governança de Software Público. Este repositório foi estruturado de forma híbrida e evolutiva com o objetivo de servir como laboratório prático focado 100% no edital do concurso Dataprev",
+                "img": "https://raw.githubusercontent.com/fabiuniz/dataprev/main/images/screenshot.png",
+                "github_url": "https://github.com/fabiuniz/dataprev"
+            },
+            {
+                "title": "Quiz Essencial, Estudo Estruturado por IA",
+                "category_class": "filter-branding",
+                "description": "Quiz Essencial é a sua ferramenta de estudo de próxima geração, projetada para transformar o aprendizado passivo em fixação ativa.",
+                "img": "https://raw.githubusercontent.com/fabiuniz/quiz_essencial/main/images/screenshot.png",
+                "github_url": "https://github.com/fabiuniz/quiz_essencial"
+            },
+            {
+                "title": "PCB Mapper & Engenharia de Prompt",
+                "category_class": "filter-branding",
+                "description": "O PCB Mapper é uma solução especializada projetada para servir como base de dados e interface para uma Inteligência Artificial diagnosticar e reparar circuitos eletrônicos.",
+                "img": "https://raw.githubusercontent.com/fabiuniz/pcb_mapper/main/images/screenshot.png",
+                "github_url": "https://github.com/fabiuniz/pcb_mapper"
+            },
+            {
+                "title": "Catálogo de PNGs com Servidor Estático e Enriquecimento Gemini",
+                "category_class": "filter-product",
                 "description": "Este projeto é uma solução completa para indexar imagens PNG de uma pasta de rede (SMB/CIFS) e exibi-las em uma galeria web estática com funcionalidade de busca",
                 "img": "https://raw.githubusercontent.com/fabiuniz/catalog_node/main/catalog_node.png",
                 "github_url": "https://github.com/fabiuniz/catalog_node"
+            },
+            {
+                "title": "Preço Casa Predictor - Quanto Vale Seu Imóvel",
+                "category_class": "filter-app",
+                "description": "Este repositório contém dois projetos Java que demonstram o uso de Inteligência Artificial e Machine Learning por meio das bibliotecas Deeplearning4j e ND4J.",
+                "img": "https://raw.githubusercontent.com/fabiuniz/dados_java_ia/main/images/screenshot.png",
+                "github_url": "https://github.com/fabiuniz/dados_java_ia"
             },
             {
                 "title": "Análise Preditiva de Turnover (ML)",
@@ -196,13 +217,6 @@ var portifolio = {
                 "github_url": "https://github.com/fabiuniz/fato-dimessao"
             },
             {
-                "title": "Gestão Escolar (FastAPI/React) containerizado.",
-                "category_class": "filter-devops",
-                "description": "O Sistema de Gestão Escolar é uma aplicação web moderna e completa para gerenciar alunos, cursos e matrículas em instituições de ensino.",
-                "img": "https://raw.githubusercontent.com/fabiuniz/gestaoedu/main/images/gestaoedu.png",
-                "github_url": "https://github.com/fabiuniz/gestaoedu"
-            },
-            {
                 "title": "Aplicação Flask Dockerizada com CI/CD - Google Cloud Run & Heroku",
                 "category_class": "filter-devops",
                 "description": "Este projeto implementa uma aplicação web moderna em Flask com frontend estiloso, empacotado em Docker e com pipelines de CI/CD totalmente automatizados usando GitHub Actions para deploy.",                
@@ -210,11 +224,11 @@ var portifolio = {
                 "github_url": "https://github.com/fabiuniz/cicd"
             },
             {
-                "title": "Preço Casa Predictor - Quanto Vale Seu Imóvel",
-                "category_class": "filter-app",
-                "description": "Este repositório contém dois projetos Java que demonstram o uso de Inteligência Artificial e Machine Learning por meio das bibliotecas Deeplearning4j e ND4J.",
-                "img": "https://raw.githubusercontent.com/fabiuniz/dados_java_ia/main/images/screenshot.png",
-                "github_url": "https://github.com/fabiuniz/dados_java_ia"
+                "title": "Gestão Escolar (FastAPI/React) containerizado.",
+                "category_class": "filter-devops",
+                "description": "O Sistema de Gestão Escolar é uma aplicação web moderna e completa para gerenciar alunos, cursos e matrículas em instituições de ensino.",
+                "img": "https://raw.githubusercontent.com/fabiuniz/gestaoedu/main/images/gestaoedu.png",
+                "github_url": "https://github.com/fabiuniz/gestaoedu"
             },
             {
                 "title": "Microserviços Java",
@@ -225,7 +239,7 @@ var portifolio = {
             },
             {
                 "title": "Microserviços Java - BTB Analytics Pipeline - Pharma Sector",
-                "category_class": "filter-product",
+                "category_class": "filter-app",
                 "description": "Este repositório contém um pipeline de dados automatizado desenvolvido para a auditoria de faturas de Pharma de um cliente do setor farmacêutico (LATAM). O objetivo é transformar dados brutos de operadoras em insights financeiros, identificando cobranças indevidas e otimizando o OPEX.",
                 "img": "https://raw.githubusercontent.com/fabiuniz/datafarma/main/images/fluxo.png",
                 "github_url": "https://github.com/fabiuniz/datafarma"
@@ -236,13 +250,6 @@ var portifolio = {
                 "description": "O gmcatalog é uma aplicação backend desenvolvida com Java e o framework Spring Boot. Seu objetivo principal é gerenciar listas de jogos, permitindo a criação de listas personalizadas e a organização de jogos dentro dessas listas. A aplicação segue a arquitetura de uma API RESTful, possibilitando a interação com os dados por meio de requisições HTTP.",
                 "img": "https://raw.githubusercontent.com/fabiuniz/gmcatalog-rest/main/images/gmcatalog.png",
                 "github_url": "https://github.com/fabiuniz/gmcatalog-rest"
-            },
-            {
-                "title": "Treinamento DATAPREV",
-                "category_class": "filter-product",
-                "description": "Programa de treinamento DATAPREV 2026: Implantação e Governança de Software Público. Este repositório foi estruturado de forma híbrida e evolutiva com o objetivo de servir como laboratório prático focado 100% no edital do concurso Dataprev",
-                "img": "https://raw.githubusercontent.com/fabiuniz/dataprev/main/images/screenshot.png",
-                "github_url": "https://github.com/fabiuniz/dataprev"
             }
         ]
     }
