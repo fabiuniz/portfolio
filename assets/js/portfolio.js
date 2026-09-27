@@ -131,7 +131,14 @@ var portifolio = {
             { "label": "IA", "filter": ".filter-branding" },
             { "label": "DevOps", "filter": ".filter-devops" }
         ],
-        "projects": [
+        "projects": [        
+            {
+                "title": "PCB Mapper & Engenharia de Prompt",
+                "category_class": "filter-branding",
+                "description": "O PCB Mapper é uma solução especializada projetada para servir como base de dados e interface para uma Inteligência Artificial diagnosticar e reparar circuitos eletrônicos.",
+                "img": "https://raw.githubusercontent.com/fabiuniz/pcb_mapper/main/images/screenshot.png",
+                "github_url": "https://github.com/fabiuniz/pcb_mapper"
+            },
             {
                 "title": "Java AI & Engenharia de Prompt",
                 "category_class": "filter-branding",
